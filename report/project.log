@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.18)  10 MAY 2017 13:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.18)  10 MAY 2017 14:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -469,14 +469,14 @@ LaTeX Font Info:    ... okay on input line 45.
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
-* h-part:(L,W,R)=(79.6678pt, 438.17227pt, 79.6678pt)
+* h-part:(L,W,R)=(71.13188pt, 455.24411pt, 71.13188pt)
 * v-part:(T,H,B)=(71.13188pt, 702.78308pt, 71.13188pt)
 * \paperwidth=597.50787pt
 * \paperheight=845.04684pt
-* \textwidth=438.17227pt
+* \textwidth=455.24411pt
 * \textheight=702.78308pt
-* \oddsidemargin=7.39781pt
-* \evensidemargin=7.39781pt
+* \oddsidemargin=-1.1381pt
+* \evensidemargin=-1.1381pt
 * \topmargin=-38.1381pt
 * \headheight=12.0pt
 * \headsep=25.0pt
@@ -587,31 +587,35 @@ Package pdftex.def Info: include/ku-en.pdf used on input line 58.
 
 
 {/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./inclu
-de/ku-farve.pdf> <./include/ku-en.pdf>]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 62.
+de/ku-farve.pdf> <./include/ku-en.pdf>] (./sections/introduction.tex
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 5.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 62.
- [2]
-(./project.aux) ) 
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 5.
+)
+Underfull \hbox (badness 10000) in paragraph at lines 11--61
+
+ []
+
+[2] (./project.aux) ) 
 Here is how much of TeX's memory you used:
- 5077 strings out of 493089
- 72421 string characters out of 6134841
- 145588 words of memory out of 5000000
+ 5081 strings out of 493089
+ 72494 string characters out of 6134841
+ 147590 words of memory out of 5000000
  8466 multiletter control sequences out of 15000+600000
  10214 words of font info for 39 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,12n,43p,508b,243s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmbx12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmr10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmr12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmr17.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-sy10.pfb>
-Output written on project.pdf (2 pages, 85066 bytes).
+ 38i,12n,43p,585b,243s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2015/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmbx12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmr10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmr12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmr17.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmsy10.pfb>
+Output written on project.pdf (2 pages, 87021 bytes).
 PDF statistics:
  49 PDF objects out of 1000 (max. 8388607)
  32 compressed objects within 1 object stream
