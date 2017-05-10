@@ -1,8 +1,12 @@
 <<<<<<< HEAD
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.18)  10 MAY 2017 15:31
+=======
+<<<<<<< HEAD
 This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.2.19)  10 MAY 2017 15:04
 =======
 This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.18)  10 MAY 2017 15:21
 >>>>>>> 4e894379d883035f45c6358476da393aaf58aea8
+>>>>>>> 216b14887729c2af5a82eda93244b471d8750bd3
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -723,8 +727,12 @@ f-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2015/texmf-
 dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2015/texmf-di
 st/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2015/texmf-dist
 /fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+<<<<<<< HEAD
+Output written on project.pdf (3 pages, 100787 bytes).
+=======
 Output written on project.pdf (3 pages, 100573 bytes).
 >>>>>>> 4e894379d883035f45c6358476da393aaf58aea8
+>>>>>>> 216b14887729c2af5a82eda93244b471d8750bd3
 PDF statistics:
  56 PDF objects out of 1000 (max. 8388607)
  37 compressed objects within 1 object stream
