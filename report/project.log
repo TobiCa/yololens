@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.2.19)  10 MAY 2017 15:04
+=======
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.18)  10 MAY 2017 15:21
+>>>>>>> 4e894379d883035f45c6358476da393aaf58aea8
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -702,6 +706,7 @@ Here is how much of TeX's memory you used:
  10829 words of font info for 41 fonts, out of 8000000 for 9000
  264 hyphenation exceptions out of 8191
  38i,12n,43p,585b,243s stack positions out of 5000i,500n,10000p,200000b,80000s
+<<<<<<< HEAD
 </usr/share/texlive/texmf-d
 ist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fo
 nts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/ty
@@ -710,6 +715,16 @@ lic/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
 fonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
 m/cmsy10.pfb>
 Output written on project.pdf (3 pages, 98985 bytes).
+=======
+</usr/local/texlive/2015/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2015/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2015/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2015/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2015/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2015/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on project.pdf (3 pages, 100573 bytes).
+>>>>>>> 4e894379d883035f45c6358476da393aaf58aea8
 PDF statistics:
  56 PDF objects out of 1000 (max. 8388607)
  37 compressed objects within 1 object stream
