@@ -8,6 +8,12 @@
     <UseEmulator>true</UseEmulator>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
-    <UseSimulator>true</UseSimulator>
+    <UseSimulator>false</UseSimulator>
+    <DeviceId>6C3DD314-EF85-06D2-68DF-7734EA48770B</DeviceId>
+    <UseEmulator>true</UseEmulator>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <DeviceId>6C3DD314-EF85-06D2-68DF-7734EA48770B</DeviceId>
+    <UseEmulator>true</UseEmulator>
   </PropertyGroup>
 </Project>
