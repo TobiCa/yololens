@@ -1,9 +1,16 @@
-/[Ll]ibrary/
-/[Tt]emp/
-/[Oo]bj/
-/[Bb]uild/
-/[Bb]uilds/
-/Assets/AssetStoreTools*
+Unity Projects/HololensLego/[Ll]ibrary/
+Unity Projects/HololensLego/[Tt]emp/
+Unity Projects/HololensLego/[Oo]bj/
+Unity Projects/HololensLego/[Bb]uild/
+Unity Projects/HololensLego/[Bb]uilds/
+Unity Projects/HololensLego/Assets/AssetStoreTools*
+
+Unity Projects/Lego/[Ll]ibrary/
+Unity Projects/Lego/[Tt]emp/
+Unity Projects/Lego/[Oo]bj/
+Unity Projects/Lego/[Bb]uild/
+Unity Projects/Lego/[Bb]uilds/
+Unity Projects/Lego/Assets/AssetStoreTools*
 
 # Visual Studio 2015 cache directory
 /.vs/
@@ -32,3 +39,10 @@ sysinfo.txt
 # Builds
 *.apk
 *.unitypackage
+
+
+
+*.aux
+*.log
+Report/project.pdf
+*.DS_Store
