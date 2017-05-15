@@ -13,11 +13,7 @@ public class brick : MonoBehaviour {
 
     // Update is called once per frame
     void Update () {
-        if (Input.GetKey(KeyCode.A))
-            transform.Rotate(Vector3.up * rotationSpeed * Time.deltaTime);
 
-        if (Input.GetKey(KeyCode.D))
-            transform.Rotate(-Vector3.up * rotationSpeed * Time.deltaTime);
     }
 
     Vector3 screenSpace;

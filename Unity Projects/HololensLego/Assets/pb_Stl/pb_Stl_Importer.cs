@@ -2,7 +2,6 @@
 
 using UnityEngine;
 using System.Text;
-using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 
@@ -31,7 +30,7 @@ namespace Parabox.STL
 		 */
 		public static Mesh[] Import(string path)
 		{
-			if( IsBinary(path) )
+			if( true )
 			{
 				try
 				{
@@ -42,10 +41,6 @@ namespace Parabox.STL
 					UnityEngine.Debug.LogWarning(string.Format("Failed importing mesh at path {0}.\n{1}", path, e.ToString()));
 					return null;
 				}
-			}
-			else
-			{
-				return ImportAscii(path);
 			}
 		}
 
@@ -120,65 +115,7 @@ namespace Parabox.STL
 				return EMPTY;
 		}
 
-		private static Mesh[] ImportAscii(string path)
-		{
-			List<Facet> facets = new List<Facet>();
-
-			using(StreamReader sr = new StreamReader(path))
-			{
-				string line;
-				int state = EMPTY, vertex = 0;
-				Facet f = null;
-				bool exit = false;
-
-				while(sr.Peek() > 0 && !exit)
-				{
-					line = sr.ReadLine().Trim();
-					int previousState = state;
-					state = ReadState(line);
-
-					switch(state)
-					{
-						case SOLID:
-							continue;
-
-						case FACET:
-							f = new Facet();
-							f.normal = StringToVec3(line.Replace("facet normal ", ""));
-						break;
-
-						case OUTER:
-							vertex = 0;
-						break;
-
-						case VERTEX:
-							if(vertex == 0) f.a = StringToVec3(line.Replace("vertex ", ""));
-							else if(vertex == 1) f.b = StringToVec3(line.Replace("vertex ", ""));
-							else if(vertex == 2) f.c = StringToVec3(line.Replace("vertex ", ""));
-							vertex++;
-						break;
-
-						case ENDLOOP:
-						break;
-
-						case ENDFACET:
-							facets.Add(f);
-						break;
-
-						case ENDSOLID:
-							exit = true;
-						break;
-
-						case EMPTY:
-						default:
-						break;
-
-					}
-				}
-			}
-
-			return CreateMeshWithFacets(facets);
-		}
+	
 
 		private static Vector3 StringToVec3(string str)
 		{
@@ -192,57 +129,7 @@ namespace Parabox.STL
 			return v;
 		}
 
-		/**
-		 * Read the first 80 bytes of a file and if they are all 0x0 it's likely
-		 * that this file is binary.
-		 */
-		private static bool IsBinary(string path)
-		{
-			// http://stackoverflow.com/questions/968935/compare-binary-files-in-c-sharp
-			FileInfo file = new FileInfo(path);
-
-			if(file.Length < 130)
-				return false;
-
-			var isBinary = false;
-
-			using(FileStream f0 = file.OpenRead())
-			{
-				using(BufferedStream bs0 = new BufferedStream(f0))
-				{
-					for(long i = 0; i < 80; i++)
-					{
-					    var readByte = bs0.ReadByte();
-					    if (readByte == 0x0)
-					    {
-					        isBinary = true;
-					        break;
-					    }
-					}
-				}
-			}
-
-            if (!isBinary)
-            {
-                using (FileStream f0 = file.OpenRead())
-                {
-                    using (BufferedStream bs0 = new BufferedStream(f0))
-                    {
-                        var byteArray = new byte[6];
-
-                        for (var i = 0; i < 6; i++)
-                        {
-                            byteArray[i] = (byte)bs0.ReadByte();
-                        }
-
-                        var text = Encoding.UTF8.GetString(byteArray);
-                        isBinary = text != "solid ";
-                    }
-                }
-            }
-
-			return isBinary;
-		}
+		
 
 		/**
 		 * @todo test with > USHORT_MAX vertex count meshes
