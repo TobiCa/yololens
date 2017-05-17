@@ -11,6 +11,6 @@ public class Brick : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		transform.Rotate(Vector3.left, Time.deltaTime);
+		transform.Rotate(Vector3.left, 20 * Time.deltaTime);
 	}
 }
