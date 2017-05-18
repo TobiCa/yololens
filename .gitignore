@@ -1,19 +1,20 @@
 *.meta
 *.sln
+.info
 
-/Unity Projects/HololensLego/[Ll]ibrary/
-/Unity Projects/HololensLego/[Tt]emp/
-/Unity Projects/HololensLego/[Oo]bj/
-/Unity Projects/HololensLego/[Bb]uild/
-/Unity Projects/HololensLego/[Bb]uilds/
-/Unity Projects/HololensLego/.vs/
+/UnityProjects/HololensLego/[Ll]ibrary/
+/UnityProjects/HololensLego/[Tt]emp/
+/UnityProjects/HololensLego/[Oo]bj/
+/UnityProjects/HololensLego/[Bb]uild/
+/UnityProjects/HololensLego/[Bb]uilds/
+/UnityProjects/HololensLego/.vs/
 
-/Unity Projects/Lego/[Ll]ibrary/
-/Unity Projects/Lego/[Tt]emp/
-/Unity Projects/Lego/[Oo]bj/
-/Unity Projects/Lego/[Bb]uild/
-/Unity Projects/Lego/[Bb]uilds/
-/Unity Projects/Lego/.vs/
+/UnityProjects/Lego/[Ll]ibrary/
+/UnityProjects/Lego/[Tt]emp/
+/UnityProjects/Lego/[Oo]bj/
+/UnityProjects/Lego/[Bb]uild/
+/UnityProjects/Lego/[Bb]uilds/
+/UnityProjects/Lego/.vs/
 
 *.aux
 *.bbl
