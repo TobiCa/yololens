@@ -1,0 +1,25 @@
+*.meta
+*.sln
+
+/Unity Projects/HololensLego/[Ll]ibrary/
+/Unity Projects/HololensLego/[Tt]emp/
+/Unity Projects/HololensLego/[Oo]bj/
+/Unity Projects/HololensLego/[Bb]uild/
+/Unity Projects/HololensLego/[Bb]uilds/
+/Unity Projects/HololensLego/.vs/
+
+/Unity Projects/Lego/[Ll]ibrary/
+/Unity Projects/Lego/[Tt]emp/
+/Unity Projects/Lego/[Oo]bj/
+/Unity Projects/Lego/[Bb]uild/
+/Unity Projects/Lego/[Bb]uilds/
+/Unity Projects/Lego/.vs/
+
+*.aux
+*.bbl
+*.blg
+*.toc
+*.log
+*.out
+*.synctex.gz
+Report/project.pdf
