@@ -16,11 +16,11 @@
 /UnityProjects/Lego/[Bb]uilds/
 /UnityProjects/Lego/.vs/
 
-*.aux
-*.bbl
-*.blg
-*.toc
-*.log
-*.out
-*.synctex.gz
+Report/*.aux
+Report/*.bbl
+Report/*.blg
+Report/*.toc
+Report/*.log
+Report/*.out
+Report/*.synctex.gz
 Report/project.pdf
