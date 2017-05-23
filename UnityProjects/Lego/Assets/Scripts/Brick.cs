@@ -14,21 +14,17 @@ public class Brick : MonoBehaviour {
     private float distance;
 
     private bool snapped = false;
-    private Vector3 lastPosition;
     private Rigidbody rigidBody;
 
     private float stdSizeX = .8f;
 	private float stdSizeY = 1.0f;
 	private float stdSizeZ = .8f;
 
-    private float small = 0.0001f;
-
     [SerializeField] private GameObject board;
 
 	// Use this for initialization
 	void Start () {
         rigidBody = GetComponent<Rigidbody>();
-        lastPosition = transform.position;
 	}
     
     // Update is called once per frame
@@ -37,8 +33,9 @@ public class Brick : MonoBehaviour {
 
         var currentPos = transform.position;
 
-        float x = nearestMultiple(currentPos.x, stdSizeX + small);
-        float z = nearestMultiple(currentPos.z, stdSizeZ + small);
+        float x = nearestMultiple(currentPos.x, stdSizeX);
+        float y = nearestMultiple(currentPos.y, stdSizeY);
+        float z = nearestMultiple(currentPos.z, stdSizeZ);
         transform.position = new Vector3(	
                                             x,
                                             currentPos.y,
@@ -47,36 +44,30 @@ public class Brick : MonoBehaviour {
         if (dragging) {
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             Vector3 rayPoint = ray.GetPoint(distance);
+            /*
             rayPoint.x = Limit(rayPoint.x, board.GetComponent<Collider>().bounds.size.x / 2 - board.transform.position.x, board.GetComponent<Collider>().bounds.size.x / 2 + board.transform.position.x);
             rayPoint.y = Limit(rayPoint.y, board.GetComponent<Collider>().bounds.size.y, 100);
             rayPoint.z = Limit(rayPoint.z, board.GetComponent<Collider>().bounds.size.z / 2 - board.transform.position.z, board.GetComponent<Collider>().bounds.size.z / 2 + board.transform.position.z);
+            */
             transform.position = rayPoint;
             rigidBody.useGravity = true;
             snapped = false;
         }
 
-        if (dragging && snapped)
+        if (!snapped)
         {
-            transform.position = lastPosition;
-        }
-
-        lastPosition = transform.position;
-
-        if (snapped)
-        {
-            rigidBody.useGravity = true;
-            transform.position = lastPosition;
+            rigidBody.isKinematic = false;
         }
     }
 
     void OnCollisionEnter(Collision col) {
         if (col.gameObject.name == "4x2") {
-           /* col.gameObject.transform.position = new Vector3(
-                                                    (float)Math.Round(transform.position.x),
-                                                    (float)Math.Round(transform.position.y),
-                                                    (float)Math.Round(transform.position.z)
-                                                );*/
-            rigidBody.useGravity = false;
+            /* col.gameObject.transform.position = new Vector3(
+                                                     (float)Math.Round(transform.position.x),
+                                                     (float)Math.Round(transform.position.y),
+                                                     (float)Math.Round(transform.position.z)
+                                                 );*/
+            rigidBody.isKinematic = true;
             snapped = true;
         }
     }
