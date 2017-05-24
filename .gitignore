@@ -1,20 +1,4 @@
-*.meta
-*.sln
-.info
 
-/UnityProjects/HololensLego/[Ll]ibrary/
-/UnityProjects/HololensLego/[Tt]emp/
-/UnityProjects/HololensLego/[Oo]bj/
-/UnityProjects/HololensLego/[Bb]uild/
-/UnityProjects/HololensLego/[Bb]uilds/
-/UnityProjects/HololensLego/.vs/
-
-/UnityProjects/Lego/[Ll]ibrary/
-/UnityProjects/Lego/[Tt]emp/
-/UnityProjects/Lego/[Oo]bj/
-/UnityProjects/Lego/[Bb]uild/
-/UnityProjects/Lego/[Bb]uilds/
-/UnityProjects/Lego/.vs/
 
 Report/*.aux
 Report/*.bbl

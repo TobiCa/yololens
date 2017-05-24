@@ -13,18 +13,27 @@ public class Brick : MonoBehaviour {
     private bool dragging = false;
     private float distance;
 
-    private bool snapped = false;
+    [SerializeField] private bool snapped = false;
     private Rigidbody rigidBody;
+    private BoxCollider boxCollider;
 
     private float stdSizeX = .8f;
-	private float stdSizeY = 1.0f;
+	private float stdSizeY = .96f;
 	private float stdSizeZ = .8f;
+
+    private Vector3 initscale = new Vector3(.1f, .1f, .1f);
+    private Vector3 boxColliderSize = new Vector3(32f, 16f, 10f);
+    private Vector3 boxColliderCenter = new Vector3(-16f, 8f, 5f);
 
     [SerializeField] private GameObject board;
 
 	// Use this for initialization
 	void Start () {
         rigidBody = GetComponent<Rigidbody>();
+        boxCollider = GetComponent<BoxCollider>();
+        transform.localScale = initscale;
+        boxCollider.size = boxColliderSize;
+        boxCollider.center = boxColliderCenter;
 	}
     
     // Update is called once per frame
@@ -61,7 +70,7 @@ public class Brick : MonoBehaviour {
     }
 
     void OnCollisionEnter(Collision col) {
-        if (col.gameObject.name == "4x2") {
+        if (col.gameObject.name == "4x2" || col.gameObject.name == "WhiteBoard") {
             /* col.gameObject.transform.position = new Vector3(
                                                      (float)Math.Round(transform.position.x),
                                                      (float)Math.Round(transform.position.y),
@@ -92,11 +101,11 @@ public class Brick : MonoBehaviour {
 
     }
 
-    private static float Limit(
-        float value, float inclusiveMinimum, float inclusiveMaximum)
+    private static float Limit(float value, float inclusiveMinimum, float inclusiveMaximum)
     {
         if (value < inclusiveMinimum) { return inclusiveMinimum; }
         if (value > inclusiveMaximum) { return inclusiveMaximum; }
         return value;
     }
+
 }
