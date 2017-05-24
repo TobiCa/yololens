@@ -10,22 +10,22 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>45b5b618-01e8-4dbe-b9fe-b42efbb380e2</PackageIdentityName>
     <PackageIdentityPublisher>CN=DefaultCompany</PackageIdentityPublisher>
-    <IntermediateOutputPath>D:\Dropbox\torsa\Dropbox\Datalogi\Blok12\MobileComputing\yololens.git\Unity Projects\Lego\App\Lego\obj\x86\Release\</IntermediateOutputPath>
+    <IntermediateOutputPath>D:\Dropbox\torsa\Dropbox\Datalogi\Blok12\MobileComputing\yololens.git\UnityProjects\Lego\App\Lego\obj\x86\Release\</IntermediateOutputPath>
     <RemoteDeploymentType></RemoteDeploymentType>
     <PackageRegistrationPath></PackageRegistrationPath>
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>D:\Dropbox\torsa\Dropbox\Datalogi\Blok12\MobileComputing\yololens.git\Unity Projects\Lego\App\Lego\bin\x86\Release\AppX</LayoutDir>
+    <LayoutDir>D:\Dropbox\torsa\Dropbox\Datalogi\Blok12\MobileComputing\yololens.git\UnityProjects\Lego\App\Lego\bin\x86\Release\AppX</LayoutDir>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="D:\Dropbox\torsa\Dropbox\Datalogi\Blok12\MobileComputing\yololens.git\Unity Projects\Lego\App\Lego\bin\x86\Release\Core\AppxManifest.xml">
+    <AppXManifest Include="D:\Dropbox\torsa\Dropbox\Datalogi\Blok12\MobileComputing\yololens.git\UnityProjects\Lego\App\Lego\bin\x86\Release\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="D:\Dropbox\torsa\Dropbox\Datalogi\Blok12\MobileComputing\yololens.git\Unity Projects\Lego\App\Lego\bin\x86\Release\Lego.exe">
+    <AppxPackagedFile Include="D:\Dropbox\torsa\Dropbox\Datalogi\Blok12\MobileComputing\yololens.git\UnityProjects\Lego\App\Lego\bin\x86\Release\Lego.exe">
       <PackagePath>entrypoint\Lego.exe</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\torsa\.nuget\packages\Microsoft.ApplicationInsights\1.0.0\lib\portable-win81+wpa81\Microsoft.ApplicationInsights.dll">
@@ -349,7 +349,7 @@
     <AppxPackagedFile Include="D:\Unity\Editor\Data\PlaybackEngines\MetroSupport\Players\UAP\dotnet\x86\Release\UnityEngineProxy.dll">
       <PackagePath>UnityEngineProxy.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Dropbox\torsa\Dropbox\Datalogi\Blok12\MobileComputing\yololens.git\Unity Projects\Lego\App\Lego\Unprocessed\WinRTLegacy.dll">
+    <AppxPackagedFile Include="D:\Dropbox\torsa\Dropbox\Datalogi\Blok12\MobileComputing\yololens.git\UnityProjects\Lego\App\Lego\Unprocessed\WinRTLegacy.dll">
       <PackagePath>WinRTLegacy.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Unity\Editor\Data\PlaybackEngines\MetroSupport\Players\UAP\dotnet\x86\Release\UnityPlayer.dll">
@@ -373,92 +373,92 @@
     <AppxPackagedFile Include="D:\Unity\Editor\Data\PlaybackEngines\MetroSupport\Players\UAP\dotnet\x86\Release\WinRTBridge.winmd">
       <PackagePath>WinRTBridge.winmd</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Dropbox\torsa\Dropbox\Datalogi\Blok12\MobileComputing\yololens.git\Unity Projects\Lego\App\Lego\Resource.res">
+    <AppxPackagedFile Include="D:\Dropbox\torsa\Dropbox\Datalogi\Blok12\MobileComputing\yololens.git\UnityProjects\Lego\App\Lego\Resource.res">
       <PackagePath>Resource.res</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Dropbox\torsa\Dropbox\Datalogi\Blok12\MobileComputing\yololens.git\Unity Projects\Lego\App\Lego\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="D:\Dropbox\torsa\Dropbox\Datalogi\Blok12\MobileComputing\yololens.git\UnityProjects\Lego\App\Lego\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Dropbox\torsa\Dropbox\Datalogi\Blok12\MobileComputing\yololens.git\Unity Projects\Lego\App\Lego\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="D:\Dropbox\torsa\Dropbox\Datalogi\Blok12\MobileComputing\yololens.git\UnityProjects\Lego\App\Lego\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Dropbox\torsa\Dropbox\Datalogi\Blok12\MobileComputing\yololens.git\Unity Projects\Lego\App\Lego\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="D:\Dropbox\torsa\Dropbox\Datalogi\Blok12\MobileComputing\yololens.git\UnityProjects\Lego\App\Lego\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Dropbox\torsa\Dropbox\Datalogi\Blok12\MobileComputing\yololens.git\Unity Projects\Lego\App\Lego\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="D:\Dropbox\torsa\Dropbox\Datalogi\Blok12\MobileComputing\yololens.git\UnityProjects\Lego\App\Lego\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Dropbox\torsa\Dropbox\Datalogi\Blok12\MobileComputing\yololens.git\Unity Projects\Lego\App\Lego\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="D:\Dropbox\torsa\Dropbox\Datalogi\Blok12\MobileComputing\yololens.git\UnityProjects\Lego\App\Lego\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Dropbox\torsa\Dropbox\Datalogi\Blok12\MobileComputing\yololens.git\Unity Projects\Lego\App\Lego\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="D:\Dropbox\torsa\Dropbox\Datalogi\Blok12\MobileComputing\yololens.git\UnityProjects\Lego\App\Lego\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Dropbox\torsa\Dropbox\Datalogi\Blok12\MobileComputing\yololens.git\Unity Projects\Lego\App\Lego\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="D:\Dropbox\torsa\Dropbox\Datalogi\Blok12\MobileComputing\yololens.git\UnityProjects\Lego\App\Lego\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Dropbox\torsa\Dropbox\Datalogi\Blok12\MobileComputing\yololens.git\Unity Projects\Lego\App\Lego\Data\globalgamemanagers">
+    <AppxPackagedFile Include="D:\Dropbox\torsa\Dropbox\Datalogi\Blok12\MobileComputing\yololens.git\UnityProjects\Lego\App\Lego\Data\globalgamemanagers">
       <PackagePath>Data\globalgamemanagers</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Dropbox\torsa\Dropbox\Datalogi\Blok12\MobileComputing\yololens.git\Unity Projects\Lego\App\Lego\Data\level0">
+    <AppxPackagedFile Include="D:\Dropbox\torsa\Dropbox\Datalogi\Blok12\MobileComputing\yololens.git\UnityProjects\Lego\App\Lego\Data\level0">
       <PackagePath>Data\level0</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Dropbox\torsa\Dropbox\Datalogi\Blok12\MobileComputing\yololens.git\Unity Projects\Lego\App\Lego\Data\Resources\unity default resources">
+    <AppxPackagedFile Include="D:\Dropbox\torsa\Dropbox\Datalogi\Blok12\MobileComputing\yololens.git\UnityProjects\Lego\App\Lego\Data\Resources\unity default resources">
       <PackagePath>Data\Resources\unity default resources</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Dropbox\torsa\Dropbox\Datalogi\Blok12\MobileComputing\yololens.git\Unity Projects\Lego\App\Lego\Data\Resources\unity_builtin_extra">
+    <AppxPackagedFile Include="D:\Dropbox\torsa\Dropbox\Datalogi\Blok12\MobileComputing\yololens.git\UnityProjects\Lego\App\Lego\Data\Resources\unity_builtin_extra">
       <PackagePath>Data\Resources\unity_builtin_extra</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Dropbox\torsa\Dropbox\Datalogi\Blok12\MobileComputing\yololens.git\Unity Projects\Lego\App\Lego\Data\globalgamemanagers.assets">
+    <AppxPackagedFile Include="D:\Dropbox\torsa\Dropbox\Datalogi\Blok12\MobileComputing\yololens.git\UnityProjects\Lego\App\Lego\Data\globalgamemanagers.assets">
       <PackagePath>Data\globalgamemanagers.assets</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Dropbox\torsa\Dropbox\Datalogi\Blok12\MobileComputing\yololens.git\Unity Projects\Lego\App\Lego\Data\sharedassets0.assets">
+    <AppxPackagedFile Include="D:\Dropbox\torsa\Dropbox\Datalogi\Blok12\MobileComputing\yololens.git\UnityProjects\Lego\App\Lego\Data\sharedassets0.assets">
       <PackagePath>Data\sharedassets0.assets</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Dropbox\torsa\Dropbox\Datalogi\Blok12\MobileComputing\yololens.git\Unity Projects\Lego\App\Lego\Data\level0.resS">
+    <AppxPackagedFile Include="D:\Dropbox\torsa\Dropbox\Datalogi\Blok12\MobileComputing\yololens.git\UnityProjects\Lego\App\Lego\Data\level0.resS">
       <PackagePath>Data\level0.resS</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Dropbox\torsa\Dropbox\Datalogi\Blok12\MobileComputing\yololens.git\Unity Projects\Lego\App\Lego\Data\sharedassets0.assets.resS">
+    <AppxPackagedFile Include="D:\Dropbox\torsa\Dropbox\Datalogi\Blok12\MobileComputing\yololens.git\UnityProjects\Lego\App\Lego\Data\sharedassets0.assets.resS">
       <PackagePath>Data\sharedassets0.assets.resS</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Dropbox\torsa\Dropbox\Datalogi\Blok12\MobileComputing\yololens.git\Unity Projects\Lego\App\Lego\Data\managedAssemblies.txt">
+    <AppxPackagedFile Include="D:\Dropbox\torsa\Dropbox\Datalogi\Blok12\MobileComputing\yololens.git\UnityProjects\Lego\App\Lego\Data\managedAssemblies.txt">
       <PackagePath>Data\managedAssemblies.txt</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.15063.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Dropbox\torsa\Dropbox\Datalogi\Blok12\MobileComputing\yololens.git\Unity Projects\Lego\App\Lego\bin\x86\Release\resources.pri">
+    <AppxPackagedFile Include="D:\Dropbox\torsa\Dropbox\Datalogi\Blok12\MobileComputing\yololens.git\UnityProjects\Lego\App\Lego\bin\x86\Release\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Dropbox\torsa\Dropbox\Datalogi\Blok12\MobileComputing\yololens.git\Unity Projects\Lego\App\Lego\UnityEngine.dll">
+    <AppxPackagedFile Include="D:\Dropbox\torsa\Dropbox\Datalogi\Blok12\MobileComputing\yololens.git\UnityProjects\Lego\App\Lego\UnityEngine.dll">
       <PackagePath>UnityEngine.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Dropbox\torsa\Dropbox\Datalogi\Blok12\MobileComputing\yololens.git\Unity Projects\Lego\App\Lego\UnityEngine.Analytics.dll">
+    <AppxPackagedFile Include="D:\Dropbox\torsa\Dropbox\Datalogi\Blok12\MobileComputing\yololens.git\UnityProjects\Lego\App\Lego\UnityEngine.Analytics.dll">
       <PackagePath>UnityEngine.Analytics.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Dropbox\torsa\Dropbox\Datalogi\Blok12\MobileComputing\yololens.git\Unity Projects\Lego\App\Lego\nunit.framework.dll">
+    <AppxPackagedFile Include="D:\Dropbox\torsa\Dropbox\Datalogi\Blok12\MobileComputing\yololens.git\UnityProjects\Lego\App\Lego\nunit.framework.dll">
       <PackagePath>nunit.framework.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Dropbox\torsa\Dropbox\Datalogi\Blok12\MobileComputing\yololens.git\Unity Projects\Lego\App\Lego\UnityEngine.UI.dll">
+    <AppxPackagedFile Include="D:\Dropbox\torsa\Dropbox\Datalogi\Blok12\MobileComputing\yololens.git\UnityProjects\Lego\App\Lego\UnityEngine.UI.dll">
       <PackagePath>UnityEngine.UI.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Dropbox\torsa\Dropbox\Datalogi\Blok12\MobileComputing\yololens.git\Unity Projects\Lego\App\Lego\UnityEngine.Networking.dll">
+    <AppxPackagedFile Include="D:\Dropbox\torsa\Dropbox\Datalogi\Blok12\MobileComputing\yololens.git\UnityProjects\Lego\App\Lego\UnityEngine.Networking.dll">
       <PackagePath>UnityEngine.Networking.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Dropbox\torsa\Dropbox\Datalogi\Blok12\MobileComputing\yololens.git\Unity Projects\Lego\App\Lego\Assembly-CSharp.dll">
+    <AppxPackagedFile Include="D:\Dropbox\torsa\Dropbox\Datalogi\Blok12\MobileComputing\yololens.git\UnityProjects\Lego\App\Lego\Assembly-CSharp.dll">
       <PackagePath>Assembly-CSharp.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Dropbox\torsa\Dropbox\Datalogi\Blok12\MobileComputing\yololens.git\Unity Projects\Lego\App\Lego\Assembly-CSharp-firstpass.dll">
+    <AppxPackagedFile Include="D:\Dropbox\torsa\Dropbox\Datalogi\Blok12\MobileComputing\yololens.git\UnityProjects\Lego\App\Lego\Assembly-CSharp-firstpass.dll">
       <PackagePath>Assembly-CSharp-firstpass.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Dropbox\torsa\Dropbox\Datalogi\Blok12\MobileComputing\yololens.git\Unity Projects\Lego\App\Lego\bin\x86\Release\Core\Lego.exe">
+    <AppxPackagedFile Include="D:\Dropbox\torsa\Dropbox\Datalogi\Blok12\MobileComputing\yololens.git\UnityProjects\Lego\App\Lego\bin\x86\Release\Core\Lego.exe">
       <PackagePath>Lego.exe</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>
