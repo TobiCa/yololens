@@ -7,7 +7,11 @@ public class Generator : MonoBehaviour {
 
 
 	[SerializeField] private GameObject brick;
+<<<<<<< HEAD
+    [SerializeField] private GameObject[] buttons;
+=======
 	[SerializeField] private GameObject[] buttons;
+>>>>>>> 2adff272eb02f1e1ca52da9e9e94f425d00e27d8
 
     private Color color = Color.green;
 
