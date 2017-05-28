@@ -63,11 +63,21 @@ public class Generator : MonoBehaviour {
 	}
 
     public void goToLevel(string newLevel) {
-        Debug.Log(newLevel);
         var root = "GeneratorBoard/Menu/";
-        GameObject.Find(root + newLevel).SetActive(true);
         GameObject.Find(root + level).SetActive(false);
+        GameObject.Find(root + newLevel).SetActive(true);
 
+        parent = level;
         level = newLevel;
+    }
+
+    public void goBack(){
+
+        goToLevel(parent);
+
+        if (parent == "onlineMenu"){
+            parent = "rootMenu";
+        }
+
     }
 }
