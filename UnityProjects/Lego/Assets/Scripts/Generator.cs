@@ -7,8 +7,6 @@ public class Generator : MonoBehaviour {
 
 
 	[SerializeField] private GameObject brick;
-    [SerializeField] private GameObject[] buttons;
-    [SerializeField] private GameObject[] canvao;
 
     private string parent = "";
     private string level = "rootMenu";
@@ -19,6 +17,7 @@ public class Generator : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         lastPosition = transform.position;
+        GameObject.Find("GeneratorBoard/Menu/back").SetActive(false);
 	}
 
 	// Update is called once per frame
@@ -55,13 +54,6 @@ public class Generator : MonoBehaviour {
         }
     }
 
-	public void backToStart() {
-		buttons.Where(obj => obj.name == "bricks").SingleOrDefault().SetActive(true);
-		buttons.Where(obj => obj.name == "templates").SingleOrDefault().SetActive(true);
-		buttons.Where(obj => obj.name == "saveLoad").SingleOrDefault().SetActive(true);
-		buttons.Where(obj => obj.name == "sandbox").SingleOrDefault().SetActive(true);
-	}
-
     public void goToLevel(string newLevel) {
         var root = "GeneratorBoard/Menu/";
         GameObject.Find(root + level).SetActive(false);
@@ -69,6 +61,12 @@ public class Generator : MonoBehaviour {
 
         parent = level;
         level = newLevel;
+
+        if(level == "rootMenu") {
+            GameObject.Find(root + "back").SetActive(false);
+        } else {
+            GameObject.Find(root + "back").SetActive(true);
+        }
     }
 
     public void goBack(){
