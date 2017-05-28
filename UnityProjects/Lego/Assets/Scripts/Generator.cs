@@ -8,6 +8,10 @@ public class Generator : MonoBehaviour {
 
 	[SerializeField] private GameObject brick;
     [SerializeField] private GameObject[] buttons;
+    [SerializeField] private GameObject[] canvao;
+
+    private string parent = "";
+    private string level = "rootMenu";
 
     private Color color = Color.green;
 
@@ -45,7 +49,7 @@ public class Generator : MonoBehaviour {
             case "blue":
                 color = Color.blue;
                 break;
-            default:
+            default:    
                 color = Color.black;
                 break;
         }
@@ -57,4 +61,13 @@ public class Generator : MonoBehaviour {
 		buttons.Where(obj => obj.name == "saveLoad").SingleOrDefault().SetActive(true);
 		buttons.Where(obj => obj.name == "sandbox").SingleOrDefault().SetActive(true);
 	}
+
+    public void goToLevel(string newLevel) {
+        Debug.Log(newLevel);
+        var root = "GeneratorBoard/Menu/";
+        GameObject.Find(root + newLevel).SetActive(true);
+        GameObject.Find(root + level).SetActive(false);
+
+        level = newLevel;
+    }
 }
