@@ -7,11 +7,7 @@ public class Generator : MonoBehaviour {
 
 
 	[SerializeField] private GameObject brick;
-<<<<<<< HEAD
     [SerializeField] private GameObject[] buttons;
-=======
-	[SerializeField] private GameObject[] buttons;
->>>>>>> 2adff272eb02f1e1ca52da9e9e94f425d00e27d8
 
     private Color color = Color.green;
 
@@ -55,17 +51,10 @@ public class Generator : MonoBehaviour {
         }
     }
 
-		public void backToStart() {
-			buttons.Where(obj => obj.name == "bricks").SingleOrDefault().SetActive(true);
-			buttons.Where(obj => obj.name == "templates").SingleOrDefault().SetActive(true);
-			buttons.Where(obj => obj.name == "saveLoad").SingleOrDefault().SetActive(true);
-			buttons.Where(obj => obj.name == "sandbox").SingleOrDefault().SetActive(true);
-		}
-
-
-
-
-
-
-
+	public void backToStart() {
+		buttons.Where(obj => obj.name == "bricks").SingleOrDefault().SetActive(true);
+		buttons.Where(obj => obj.name == "templates").SingleOrDefault().SetActive(true);
+		buttons.Where(obj => obj.name == "saveLoad").SingleOrDefault().SetActive(true);
+		buttons.Where(obj => obj.name == "sandbox").SingleOrDefault().SetActive(true);
+	}
 }
