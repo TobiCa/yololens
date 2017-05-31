@@ -12,6 +12,7 @@ public class Generator : MonoBehaviour {
 
     private string parent = "";
     private string level = "rootMenu";
+		private string root = "GeneratorBoard/Menu/";
 
     private Color color = Color.green;
 
@@ -49,35 +50,27 @@ public class Generator : MonoBehaviour {
             case "blue":
                 color = Color.blue;
                 break;
-            default:    
+            default:
                 color = Color.black;
                 break;
         }
     }
 
-	public void backToStart() {
-		buttons.Where(obj => obj.name == "bricks").SingleOrDefault().SetActive(true);
-		buttons.Where(obj => obj.name == "templates").SingleOrDefault().SetActive(true);
-		buttons.Where(obj => obj.name == "saveLoad").SingleOrDefault().SetActive(true);
-		buttons.Where(obj => obj.name == "sandbox").SingleOrDefault().SetActive(true);
-	}
-
     public void goToLevel(string newLevel) {
-        var root = "GeneratorBoard/Menu/";
         GameObject.Find(root + level).SetActive(false);
         GameObject.Find(root + newLevel).SetActive(true);
-
-        parent = level;
-        level = newLevel;
+				parent = level;
+				level = newLevel;
+				if (newLevel == "rootMenu") {
+					parent = "rootMenu";
+				}
     }
 
+		public void backToMainMenu() {
+			goToLevel("rootMenu");
+		}
+
     public void goBack(){
-
         goToLevel(parent);
-
-        if (parent == "onlineMenu"){
-            parent = "rootMenu";
-        }
-
     }
 }
