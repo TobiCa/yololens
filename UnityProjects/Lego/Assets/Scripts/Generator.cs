@@ -10,6 +10,7 @@ public class Generator : MonoBehaviour {
 
     private string parent = "";
     private string level = "rootMenu";
+		private string root = "GeneratorBoard/Menu/";
 
     private Color color = Color.green;
 
@@ -48,16 +49,16 @@ public class Generator : MonoBehaviour {
             case "blue":
                 color = Color.blue;
                 break;
-            default:    
+            default:
                 color = Color.black;
                 break;
         }
     }
 
     public void goToLevel(string newLevel) {
-        var root = "GeneratorBoard/Menu/";
         GameObject.Find(root + level).SetActive(false);
         GameObject.Find(root + newLevel).SetActive(true);
+<<<<<<< HEAD
 
         parent = level;
         level = newLevel;
@@ -67,15 +68,20 @@ public class Generator : MonoBehaviour {
         } else {
             GameObject.Find(root + "back").SetActive(true);
         }
+=======
+				parent = level;
+				level = newLevel;
+				if (newLevel == "rootMenu") {
+					parent = "rootMenu";
+				}
+>>>>>>> 7fe30e85dba58cfae0dd9c9889ffc3dd3f86386a
     }
 
+		public void backToMainMenu() {
+			goToLevel("rootMenu");
+		}
+
     public void goBack(){
-
         goToLevel(parent);
-
-        if (parent == "onlineMenu"){
-            parent = "rootMenu";
-        }
-
     }
 }

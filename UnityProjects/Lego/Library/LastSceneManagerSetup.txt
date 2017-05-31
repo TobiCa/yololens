@@ -1,1 +1,8 @@
+<<<<<<< HEAD
 sceneSetups: []
+=======
+sceneSetups:
+- path: Assets/yolokit.unity
+  isLoaded: 1
+  isActive: 1
+>>>>>>> 7fe30e85dba58cfae0dd9c9889ffc3dd3f86386a
