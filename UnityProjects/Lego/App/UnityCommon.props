@@ -1,6 +1,6 @@
 ﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
     <PropertyGroup>
-        <UnityWSASolutionName>Lego</UnityWSASolutionName>
+        <UnityWSASolutionName>HoloToolkit-Unity</UnityWSASolutionName>
         <UnityWSASolutionDir>D:\Dropbox\torsa\Dropbox\Datalogi\Blok12\MobileComputing\yololens.git\UnityProjects\Lego\App\</UnityWSASolutionDir>
         <UnityProjectDir>D:\Dropbox\torsa\Dropbox\Datalogi\Blok12\MobileComputing\yololens.git\UnityProjects\Lego\</UnityProjectDir>
         <UnityWSAPlayerDir>D:\Unity\Editor\Data\PlaybackEngines\MetroSupport\</UnityWSAPlayerDir>

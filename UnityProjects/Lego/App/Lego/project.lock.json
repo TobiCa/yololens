@@ -1917,6 +1917,21 @@
             "rid": "win8-aot"
           }
         }
+      },
+      "Assembly-CSharp/1.0.0": {
+        "type": "project",
+        "framework": "UAP,Version=v10.0",
+        "dependencies": {
+          "Assembly-CSharp-firstpass": "1.0.0",
+          "Microsoft.NETCore.UniversalWindowsPlatform": "5.0.0"
+        }
+      },
+      "Assembly-CSharp-firstpass/1.0.0": {
+        "type": "project",
+        "framework": "UAP,Version=v10.0",
+        "dependencies": {
+          "Microsoft.NETCore.UniversalWindowsPlatform": "5.0.0"
+        }
       }
     },
     "UAP,Version=v10.0/win10-arm": {
@@ -3692,6 +3707,21 @@
         "runtime": {
           "lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
+      },
+      "Assembly-CSharp/1.0.0": {
+        "type": "project",
+        "framework": "UAP,Version=v10.0",
+        "dependencies": {
+          "Assembly-CSharp-firstpass": "1.0.0",
+          "Microsoft.NETCore.UniversalWindowsPlatform": "5.0.0"
+        }
+      },
+      "Assembly-CSharp-firstpass/1.0.0": {
+        "type": "project",
+        "framework": "UAP,Version=v10.0",
+        "dependencies": {
+          "Microsoft.NETCore.UniversalWindowsPlatform": "5.0.0"
+        }
       }
     },
     "UAP,Version=v10.0/win10-arm-aot": {
@@ -5429,6 +5459,21 @@
         },
         "runtime": {
           "runtimes/win8-aot/lib/netcore50/System.Xml.XmlSerializer.dll": {}
+        }
+      },
+      "Assembly-CSharp/1.0.0": {
+        "type": "project",
+        "framework": "UAP,Version=v10.0",
+        "dependencies": {
+          "Assembly-CSharp-firstpass": "1.0.0",
+          "Microsoft.NETCore.UniversalWindowsPlatform": "5.0.0"
+        }
+      },
+      "Assembly-CSharp-firstpass/1.0.0": {
+        "type": "project",
+        "framework": "UAP,Version=v10.0",
+        "dependencies": {
+          "Microsoft.NETCore.UniversalWindowsPlatform": "5.0.0"
         }
       }
     },
@@ -7212,6 +7257,21 @@
         "runtime": {
           "lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
+      },
+      "Assembly-CSharp/1.0.0": {
+        "type": "project",
+        "framework": "UAP,Version=v10.0",
+        "dependencies": {
+          "Assembly-CSharp-firstpass": "1.0.0",
+          "Microsoft.NETCore.UniversalWindowsPlatform": "5.0.0"
+        }
+      },
+      "Assembly-CSharp-firstpass/1.0.0": {
+        "type": "project",
+        "framework": "UAP,Version=v10.0",
+        "dependencies": {
+          "Microsoft.NETCore.UniversalWindowsPlatform": "5.0.0"
+        }
       }
     },
     "UAP,Version=v10.0/win10-x64-aot": {
@@ -8949,6 +9009,21 @@
         },
         "runtime": {
           "runtimes/win8-aot/lib/netcore50/System.Xml.XmlSerializer.dll": {}
+        }
+      },
+      "Assembly-CSharp/1.0.0": {
+        "type": "project",
+        "framework": "UAP,Version=v10.0",
+        "dependencies": {
+          "Assembly-CSharp-firstpass": "1.0.0",
+          "Microsoft.NETCore.UniversalWindowsPlatform": "5.0.0"
+        }
+      },
+      "Assembly-CSharp-firstpass/1.0.0": {
+        "type": "project",
+        "framework": "UAP,Version=v10.0",
+        "dependencies": {
+          "Microsoft.NETCore.UniversalWindowsPlatform": "5.0.0"
         }
       }
     },
@@ -10732,6 +10807,21 @@
         "runtime": {
           "lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
+      },
+      "Assembly-CSharp/1.0.0": {
+        "type": "project",
+        "framework": "UAP,Version=v10.0",
+        "dependencies": {
+          "Assembly-CSharp-firstpass": "1.0.0",
+          "Microsoft.NETCore.UniversalWindowsPlatform": "5.0.0"
+        }
+      },
+      "Assembly-CSharp-firstpass/1.0.0": {
+        "type": "project",
+        "framework": "UAP,Version=v10.0",
+        "dependencies": {
+          "Microsoft.NETCore.UniversalWindowsPlatform": "5.0.0"
+        }
       }
     },
     "UAP,Version=v10.0/win10-x86-aot": {
@@ -12469,6 +12559,21 @@
         },
         "runtime": {
           "runtimes/win8-aot/lib/netcore50/System.Xml.XmlSerializer.dll": {}
+        }
+      },
+      "Assembly-CSharp/1.0.0": {
+        "type": "project",
+        "framework": "UAP,Version=v10.0",
+        "dependencies": {
+          "Assembly-CSharp-firstpass": "1.0.0",
+          "Microsoft.NETCore.UniversalWindowsPlatform": "5.0.0"
+        }
+      },
+      "Assembly-CSharp-firstpass/1.0.0": {
+        "type": "project",
+        "framework": "UAP,Version=v10.0",
+        "dependencies": {
+          "Microsoft.NETCore.UniversalWindowsPlatform": "5.0.0"
         }
       }
     }
@@ -15762,6 +15867,16 @@
         "system.xml.xmlserializer.4.0.10.nupkg.sha512",
         "system.xml.xmlserializer.nuspec"
       ]
+    },
+    "Assembly-CSharp/1.0.0": {
+      "type": "project",
+      "path": "../GeneratedProjects/UWP/Assembly-CSharp/project.json",
+      "msbuildProject": "../GeneratedProjects/UWP/Assembly-CSharp/Assembly-CSharp.csproj"
+    },
+    "Assembly-CSharp-firstpass/1.0.0": {
+      "type": "project",
+      "path": "../GeneratedProjects/UWP/Assembly-CSharp-firstpass/project.json",
+      "msbuildProject": "../GeneratedProjects/UWP/Assembly-CSharp-firstpass/Assembly-CSharp-firstpass.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -15782,7 +15897,19 @@
       "projectName": "Lego",
       "projectPath": "D:\\Dropbox\\torsa\\Dropbox\\Datalogi\\Blok12\\MobileComputing\\yololens.git\\UnityProjects\\Lego\\App\\Lego\\Lego.csproj",
       "projectJsonPath": "D:\\Dropbox\\torsa\\Dropbox\\Datalogi\\Blok12\\MobileComputing\\yololens.git\\UnityProjects\\Lego\\App\\Lego\\project.json",
-      "projectStyle": "ProjectJson"
+      "projectStyle": "ProjectJson",
+      "frameworks": {
+        "uap10.0": {
+          "projectReferences": {
+            "D:\\Dropbox\\torsa\\Dropbox\\Datalogi\\Blok12\\MobileComputing\\yololens.git\\UnityProjects\\Lego\\App\\GeneratedProjects\\UWP\\Assembly-CSharp\\Assembly-CSharp.csproj": {
+              "projectPath": "D:\\Dropbox\\torsa\\Dropbox\\Datalogi\\Blok12\\MobileComputing\\yololens.git\\UnityProjects\\Lego\\App\\GeneratedProjects\\UWP\\Assembly-CSharp\\Assembly-CSharp.csproj"
+            },
+            "D:\\Dropbox\\torsa\\Dropbox\\Datalogi\\Blok12\\MobileComputing\\yololens.git\\UnityProjects\\Lego\\App\\GeneratedProjects\\UWP\\Assembly-CSharp-firstpass\\Assembly-CSharp-firstpass.csproj": {
+              "projectPath": "D:\\Dropbox\\torsa\\Dropbox\\Datalogi\\Blok12\\MobileComputing\\yololens.git\\UnityProjects\\Lego\\App\\GeneratedProjects\\UWP\\Assembly-CSharp-firstpass\\Assembly-CSharp-firstpass.csproj"
+            }
+          }
+        }
+      }
     },
     "dependencies": {
       "Microsoft.ApplicationInsights": "1.0.0",

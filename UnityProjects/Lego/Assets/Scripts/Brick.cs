@@ -37,7 +37,7 @@ public class Brick : MonoBehaviour {
 	}
     
     // Update is called once per frame
-    void Update () {
+    void FixedUpdate () {
         transform.rotation = Quaternion.Euler(-90, rotation, 0);
 
         var currentPos = transform.position;
@@ -81,6 +81,7 @@ public class Brick : MonoBehaviour {
         }
     }
 
+    /*
     void OnMouseDown()
     {
         distance = Vector3.Distance(transform.position, Camera.main.transform.position);
@@ -90,8 +91,8 @@ public class Brick : MonoBehaviour {
     void OnMouseUp()
     {
         dragging = false;
-    }
-
+    }*/
+    
     private float nearestMultiple(float value, float factor)
     {
         return (float)Math.Round(
@@ -108,4 +109,10 @@ public class Brick : MonoBehaviour {
         return value;
     }
 
+    // Called by GazeGestureManager when the user performs a Select gesture
+    void OnSelect()
+    { 
+        distance = Vector3.Distance(transform.position, Camera.main.transform.position);
+        dragging = true;
+    }
 }

@@ -449,8 +449,14 @@
     <AppxPackagedFile Include="D:\Dropbox\torsa\Dropbox\Datalogi\Blok12\MobileComputing\yololens.git\UnityProjects\Lego\App\Lego\UnityEngine.UI.dll">
       <PackagePath>UnityEngine.UI.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Dropbox\torsa\Dropbox\Datalogi\Blok12\MobileComputing\yololens.git\UnityProjects\Lego\App\Lego\UnityEngine.HoloLens.dll">
+      <PackagePath>UnityEngine.HoloLens.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Dropbox\torsa\Dropbox\Datalogi\Blok12\MobileComputing\yololens.git\UnityProjects\Lego\App\Lego\UnityEngine.Networking.dll">
       <PackagePath>UnityEngine.Networking.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Dropbox\torsa\Dropbox\Datalogi\Blok12\MobileComputing\yololens.git\UnityProjects\Lego\App\Lego\UnityEngine.VR.dll">
+      <PackagePath>UnityEngine.VR.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Dropbox\torsa\Dropbox\Datalogi\Blok12\MobileComputing\yololens.git\UnityProjects\Lego\App\Lego\Assembly-CSharp.dll">
       <PackagePath>Assembly-CSharp.dll</PackagePath>

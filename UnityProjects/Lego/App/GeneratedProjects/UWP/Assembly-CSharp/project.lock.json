@@ -15544,16 +15544,16 @@
   },
   "project": {
     "restore": {
-      "projectUniqueName": "D:\\Dropbox\\torsa\\Dropbox\\Datalogi\\Blok12\\MobileComputing\\yololens.git\\Unity Projects\\Lego\\App\\GeneratedProjects\\UWP\\Assembly-CSharp\\Assembly-CSharp.csproj",
+      "projectUniqueName": "D:\\Dropbox\\torsa\\Dropbox\\Datalogi\\Blok12\\MobileComputing\\yololens.git\\UnityProjects\\Lego\\App\\GeneratedProjects\\UWP\\Assembly-CSharp\\Assembly-CSharp.csproj",
       "projectName": "Assembly-CSharp",
-      "projectPath": "D:\\Dropbox\\torsa\\Dropbox\\Datalogi\\Blok12\\MobileComputing\\yololens.git\\Unity Projects\\Lego\\App\\GeneratedProjects\\UWP\\Assembly-CSharp\\Assembly-CSharp.csproj",
-      "projectJsonPath": "D:\\Dropbox\\torsa\\Dropbox\\Datalogi\\Blok12\\MobileComputing\\yololens.git\\Unity Projects\\Lego\\App\\GeneratedProjects\\UWP\\Assembly-CSharp\\project.json",
+      "projectPath": "D:\\Dropbox\\torsa\\Dropbox\\Datalogi\\Blok12\\MobileComputing\\yololens.git\\UnityProjects\\Lego\\App\\GeneratedProjects\\UWP\\Assembly-CSharp\\Assembly-CSharp.csproj",
+      "projectJsonPath": "D:\\Dropbox\\torsa\\Dropbox\\Datalogi\\Blok12\\MobileComputing\\yololens.git\\UnityProjects\\Lego\\App\\GeneratedProjects\\UWP\\Assembly-CSharp\\project.json",
       "projectStyle": "ProjectJson",
       "frameworks": {
         "uap10.0": {
           "projectReferences": {
-            "D:\\Dropbox\\torsa\\Dropbox\\Datalogi\\Blok12\\MobileComputing\\yololens.git\\Unity Projects\\Lego\\App\\GeneratedProjects\\UWP\\Assembly-CSharp-firstpass\\Assembly-CSharp-firstpass.csproj": {
-              "projectPath": "D:\\Dropbox\\torsa\\Dropbox\\Datalogi\\Blok12\\MobileComputing\\yololens.git\\Unity Projects\\Lego\\App\\GeneratedProjects\\UWP\\Assembly-CSharp-firstpass\\Assembly-CSharp-firstpass.csproj"
+            "D:\\Dropbox\\torsa\\Dropbox\\Datalogi\\Blok12\\MobileComputing\\yololens.git\\UnityProjects\\Lego\\App\\GeneratedProjects\\UWP\\Assembly-CSharp-firstpass\\Assembly-CSharp-firstpass.csproj": {
+              "projectPath": "D:\\Dropbox\\torsa\\Dropbox\\Datalogi\\Blok12\\MobileComputing\\yololens.git\\UnityProjects\\Lego\\App\\GeneratedProjects\\UWP\\Assembly-CSharp-firstpass\\Assembly-CSharp-firstpass.csproj"
             }
           }
         }
