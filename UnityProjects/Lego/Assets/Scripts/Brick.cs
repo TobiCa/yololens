@@ -113,6 +113,6 @@ public class Brick : MonoBehaviour {
     void OnSelect()
     { 
         distance = Vector3.Distance(transform.position, Camera.main.transform.position);
-        dragging = true;
+        dragging = !dragging;
     }
 }
