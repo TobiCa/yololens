@@ -10,10 +10,9 @@ public class Brick : MonoBehaviour {
     [SerializeField] private int width;
     [SerializeField] private int hight;
 
-    private bool dragging = false;
+    //private bool placing = false;
     private float distance;
 
-    [SerializeField] private bool snapped = false;
     private Rigidbody rigidBody;
     private BoxCollider boxCollider;
 
@@ -21,11 +20,11 @@ public class Brick : MonoBehaviour {
 	private float stdSizeY = .96f;
 	private float stdSizeZ = .8f;
 
-    private Vector3 initscale = new Vector3(.1f, .1f, .1f);
+    private float scaleStuff = .25f;
+
+    private Vector3 initscale = new Vector3(.05f, .05f, .05f);
     private Vector3 boxColliderSize = new Vector3(32f, 16f, 10f);
     private Vector3 boxColliderCenter = new Vector3(-16f, 8f, 5f);
-
-    [SerializeField] private GameObject board;
 
 	// Use this for initialization
 	void Start () {
@@ -42,42 +41,26 @@ public class Brick : MonoBehaviour {
 
         var currentPos = transform.position;
 
-        float x = nearestMultiple(currentPos.x, stdSizeX);
-        float y = nearestMultiple(currentPos.y, stdSizeY);
-        float z = nearestMultiple(currentPos.z, stdSizeZ);
+        float x = nearestMultiple(currentPos.x, stdSizeX * this.scaleStuff);
+        float y = nearestMultiple(currentPos.y, stdSizeY * this.scaleStuff);
+        float z = nearestMultiple(currentPos.z, stdSizeZ * this.scaleStuff);
         transform.position = new Vector3(	
                                             x,
                                             currentPos.y,
                                             z
                                         );
-        if (dragging) {
-            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-            Vector3 rayPoint = ray.GetPoint(distance);
-            /*
-            rayPoint.x = Limit(rayPoint.x, board.GetComponent<Collider>().bounds.size.x / 2 - board.transform.position.x, board.GetComponent<Collider>().bounds.size.x / 2 + board.transform.position.x);
-            rayPoint.y = Limit(rayPoint.y, board.GetComponent<Collider>().bounds.size.y, 100);
-            rayPoint.z = Limit(rayPoint.z, board.GetComponent<Collider>().bounds.size.z / 2 - board.transform.position.z, board.GetComponent<Collider>().bounds.size.z / 2 + board.transform.position.z);
-            */
-            transform.position = rayPoint;
-            rigidBody.useGravity = true;
-            snapped = false;
-        }
 
-        if (!snapped)
-        {
-            rigidBody.isKinematic = false;
-        }
     }
 
     void OnCollisionEnter(Collision col) {
-        if (col.gameObject.name == "4x2" || col.gameObject.name == "WhiteBoard") {
+        if (col.gameObject.tag == "Brick") {
             /* col.gameObject.transform.position = new Vector3(
                                                      (float)Math.Round(transform.position.x),
                                                      (float)Math.Round(transform.position.y),
                                                      (float)Math.Round(transform.position.z)
                                                  );*/
-            rigidBody.isKinematic = true;
-            snapped = true;
+            this.rigidBody.isKinematic = true;
+
         }
     }
 
@@ -107,12 +90,5 @@ public class Brick : MonoBehaviour {
         if (value < inclusiveMinimum) { return inclusiveMinimum; }
         if (value > inclusiveMaximum) { return inclusiveMaximum; }
         return value;
-    }
-
-    // Called by GazeGestureManager when the user performs a Select gesture
-    void OnSelect()
-    { 
-        distance = Vector3.Distance(transform.position, Camera.main.transform.position);
-        dragging = !dragging;
     }
 }

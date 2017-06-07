@@ -13,16 +13,14 @@ public class Generator : MonoBehaviour {
 
     private Color color = Color.green;
 
-    private Vector3 lastPosition;
 	// Use this for initialization
 	void Start () {
-        lastPosition = transform.position;
         GameObject.Find("GeneratorBoard/Menu/back").SetActive(false);
 	}
 
 	// Update is called once per frame
 	void Update () {
-        transform.position = lastPosition;
+       
 	}
 
 	public void InstantiateBrick(){
@@ -31,8 +29,8 @@ public class Generator : MonoBehaviour {
         var rot = Quaternion.Euler(-90, 90, 0);
         GameObject go = Instantiate(brick, pos, rot) as GameObject;
         go.name = "4x2";
+        go.tag = "Brick";
         go.AddComponent<Brick>();
-        go.AddComponent<Rigidbody>();
         go.AddComponent<BoxCollider>();
  		go.GetComponent<Renderer>().material.color = color;
     }
