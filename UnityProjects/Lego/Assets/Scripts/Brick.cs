@@ -14,29 +14,24 @@ public class Brick : MonoBehaviour {
     private float distance;
 
     private Rigidbody rigidBody;
-    private BoxCollider boxCollider;
 
     private float stdSizeX = .8f;
 	private float stdSizeY = .96f;
 	private float stdSizeZ = .8f;
 
-    private float scaleStuff = .25f;
+    private float scaleStuff = .005f;
 
-    private Vector3 initscale = new Vector3(.05f, .05f, .05f);
-    private Vector3 boxColliderSize = new Vector3(32f, 16f, 10f);
-    private Vector3 boxColliderCenter = new Vector3(-16f, 8f, 5f);
+    private Vector3 initscale;
 
 	// Use this for initialization
 	void Start () {
+
         rigidBody = GetComponent<Rigidbody>();
-        boxCollider = GetComponent<BoxCollider>();
-        transform.localScale = initscale;
-        boxCollider.size = boxColliderSize;
-        boxCollider.center = boxColliderCenter;
+
 	}
     
     // Update is called once per frame
-    void FixedUpdate () {
+    void Update () {
         transform.rotation = Quaternion.Euler(-90, rotation, 0);
 
         var currentPos = transform.position;
@@ -54,27 +49,12 @@ public class Brick : MonoBehaviour {
 
     void OnCollisionEnter(Collision col) {
         if (col.gameObject.tag == "Brick") {
-            /* col.gameObject.transform.position = new Vector3(
-                                                     (float)Math.Round(transform.position.x),
-                                                     (float)Math.Round(transform.position.y),
-                                                     (float)Math.Round(transform.position.z)
-                                                 );*/
+
             this.rigidBody.isKinematic = true;
 
         }
     }
 
-    /*
-    void OnMouseDown()
-    {
-        distance = Vector3.Distance(transform.position, Camera.main.transform.position);
-        dragging = true;
-    }
-
-    void OnMouseUp()
-    {
-        dragging = false;
-    }*/
     
     private float nearestMultiple(float value, float factor)
     {
