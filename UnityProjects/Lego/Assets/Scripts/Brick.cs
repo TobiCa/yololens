@@ -16,7 +16,7 @@ public class Brick : MonoBehaviour {
     private Rigidbody rigidBody;
 
     private float stdSizeX = .8f;
-	private float stdSizeY = .96f;
+	//private float stdSizeY = .96f;
 	private float stdSizeZ = .8f;
 
     private float scaleStuff = .005f;
@@ -37,7 +37,7 @@ public class Brick : MonoBehaviour {
         var currentPos = transform.position;
 
         float x = nearestMultiple(currentPos.x, stdSizeX * this.scaleStuff);
-        float y = nearestMultiple(currentPos.y, stdSizeY * this.scaleStuff);
+        //float y = nearestMultiple(currentPos.y, stdSizeY * this.scaleStuff);
         float z = nearestMultiple(currentPos.z, stdSizeZ * this.scaleStuff);
         transform.position = new Vector3(	
                                             x,

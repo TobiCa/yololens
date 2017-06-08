@@ -4,13 +4,10 @@ using System.Collections.Generic;
 using System.Threading;
 using UnityEngine;
 
-public class GeneratorBoard : MonoBehaviour {
-
-    private Rigidbody rigidBody;
+public class GeneratorBoard : MonoBehaviour { 
 
 	// Use this for initialization
 	void Start () {
-        rigidBody = GetComponent<Rigidbody>();
 
     }
 	
