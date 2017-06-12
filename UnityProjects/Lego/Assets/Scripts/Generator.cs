@@ -9,52 +9,92 @@ public class Generator : MonoBehaviour {
     public float brickScale = .25f;
     public GameObject[] bricks;
 
+    private System.Random rnd = new System.Random();
+
+    /*
     private Vector3 boxColliderSize = new Vector3(32f, 16f, 10f);
     private Vector3 boxColliderCenter = new Vector3(-16f, 8f, 5f);
+    */
 
     private string parent = "";
     private string level = "rootMenu";
     
-    /*
+    
     private float stdSizeX = .8f;
     private float stdSizeY = .96f;
     private float stdSizeZ = .8f;
-    */
+    
 
     private Color color = Color.green;
+    private bool isSandbox = false;
+    private Vector3 v3 = new Vector3(1,1,1);
 
-	// Use this for initialization
-	void Start () {
-        GameObject.Find("GeneratorBoard/Menu/back").SetActive(false);
+    // Use this for initialization
+    void Start () {
+
 	}
 
 	// Update is called once per frame
 	void Update () {
-       
-	}
+        this.GetComponent<Rigidbody>().useGravity = false;
+        this.GetComponent<Rigidbody>().isKinematic = true;
+
+
+    }
 
     public void InstantiateBrick(int i) {
 
         var currentPos = transform.position;
 
-        var where = .256f;
+        var where = .512f;
         var x = currentPos.x + where;
         var y = currentPos.y;
         var z = currentPos.z - where;
 
         var pos = new Vector3(x, y, z);
+        if (this.isSandbox)
+        {
+            pos = this.v3 + pos;
+        }
         var rot = Quaternion.Euler(-90, 90, 0);
         GameObject go = Instantiate(bricks[i], pos, rot) as GameObject;
         go.tag = "Brick";
         go.transform.localScale = new Vector3(brickScale, brickScale, brickScale);
-        go.AddComponent<Brick>();
+        var script = go.AddComponent<Brick>();
+        script.scaleStuff = this.brickScale;
         go.AddComponent<HandDraggable>();
         Rigidbody rigidBody = go.AddComponent<Rigidbody>();
         BoxCollider boxCollider = go.AddComponent<BoxCollider>();
+        var tempColor = this.color;
+        if (this.isSandbox)
+        {
+            string[] colors = new string[3] { "red", "blue", "green" };
+            
+            int ind = rnd.Next(3);
+            ChangeColor(colors[ind]);
+        }
  		go.GetComponent<Renderer>().material.color = color;
-        boxCollider.size = boxColliderSize * brickScale;
-        boxCollider.center = boxColliderCenter * brickScale;
-        rigidBody.useGravity = true;
+        this.color = tempColor;
+        Vector3 boxS = new Vector3(boxCollider.size.x, boxCollider.size.y, this.stdSizeY);
+        boxCollider.size = boxS;
+        Vector3 boxC = new Vector3(boxCollider.center.x, boxCollider.center.y, 0.5f);
+        boxCollider.center = boxC;
+        //boxCollider.center = boxColliderCenter * brickScale;
+        rigidBody.useGravity = false;
+        rigidBody.isKinematic = true;
+    }
+
+    public void Sandbox()
+    {
+
+        this.isSandbox = true;
+        for (int a =  0; a < 20; a++)
+        {
+            this.v3 = new Vector3(a * this.stdSizeX * this.brickScale * 2 , 0, this.stdSizeZ * this.brickScale);
+            int ind = rnd.Next(3);
+            this.InstantiateBrick(ind);
+        }
+        this.isSandbox = false; 
     }
 
     public void ChangeColor(string newColor){
@@ -77,6 +117,8 @@ public class Generator : MonoBehaviour {
     public void goToLevel(string newLevel) {
         var root = "GeneratorBoard/Menu/";
         GameObject.Find(root + level).SetActive(false);
+        GameObject.Find(root + newLevel).SetActive(true);
+        GameObject.Find(root + newLevel).SetActive(false);
         GameObject.Find(root + newLevel).SetActive(true);
 
         parent = level;

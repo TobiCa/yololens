@@ -114,6 +114,10 @@ namespace HoloToolkit.Unity.InputModule
                 return;
             }
 
+            this.GetComponent<Rigidbody>().isKinematic = true;
+            this.GetComponent<Rigidbody>().useGravity = false;
+
+
             // Add self as a modal input handler, to get all inputs during the manipulation
             InputManager.Instance.PushModalInputHandler(gameObject);
 
@@ -242,6 +246,10 @@ namespace HoloToolkit.Unity.InputModule
             {
                 return;
             }
+
+            this.GetComponent<Rigidbody>().isKinematic = false;
+            this.GetComponent<Rigidbody>().useGravity = true;
+
 
             // Remove self as a modal input handler
             InputManager.Instance.PopModalInputHandler();

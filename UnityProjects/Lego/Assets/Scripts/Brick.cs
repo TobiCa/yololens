@@ -19,7 +19,7 @@ public class Brick : MonoBehaviour {
 	//private float stdSizeY = .96f;
 	private float stdSizeZ = .8f;
 
-    private float scaleStuff = .005f;
+    public float scaleStuff = .01f;
 
     private Vector3 initscale;
 
@@ -48,17 +48,16 @@ public class Brick : MonoBehaviour {
     }
 
     void OnCollisionEnter(Collision col) {
-        if (col.gameObject.tag == "Brick") {
-
-            this.rigidBody.isKinematic = true;
-
-        }
+        this.rigidBody.isKinematic = true;
     }
 
-    
+    private void OnCollisionExit(Collision collision) {
+        this.rigidBody.isKinematic = false;
+    }
+
     private float nearestMultiple(float value, float factor)
     {
-        return (float)Math.Round(
+        return (float)Math.Round(   
                      (value / (double)factor),
                      MidpointRounding.AwayFromZero
                  ) * factor;
