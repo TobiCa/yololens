@@ -1,7 +1,11 @@
 fileFormatVersion: 2
 guid: f6531845d2d6249c69f63b754af63d69
 folderAsset: yes
+<<<<<<< HEAD:UnityProjects/Lego/Assets/Images/ButtonLayout.meta~0da723b33106e72a7b0b4dd170d1d6aa9107a1f8
 timeCreated: 1495977158
+=======
+timeCreated: 1496234958
+>>>>>>> 72d41156bee9aa6cb78c4be416282e3ea467a103:UnityProjects/Lego/Assets/App.meta
 licenseType: Free
 DefaultImporter:
   userData: 
