@@ -1,4 +1,6 @@
-\section{Sketching}
+% !TeX root = ../project.tex
+
+\section{Design}
 The structure can look like this:
 \begin{itemize}
 	\item Present the chosen design challenges and some of the initial concerns in the beginning phase
@@ -10,10 +12,11 @@ The structure can look like this:
 		\end{itemize}
 	\item Conclude what the final sketches are - what do they accomplish, and what do they lack(maybe reference what might be discussed in future work)?
 \end{itemize}
+
 \subsection{How do we access the application? (Menu)}
-The menu is an essential part of any application. It outlines the possibilities for the user in a simple fashion. The menu is something every user has experience with, as it is the first thing a user is met with when running an application. This means that the menu has to contain of certain classic elements.\par A user needs a way to close the application. On mobile phones nowadays this can be done with 'return' buttons on the phone, but all applications generally have a built in exit function.\par
-The user also needs to have some sort of options menu, and guidelines. This is a must for this application. Stacking LEGO seems simple and intuitive, but all the operations and possibilities is something that can confuse a potential user. \par
-Lastly the menu needs to have an easy access to the LEGO session itself. It shouldn't be complicated for the user to start a new LEGO session, meaning that this action should be as intuitive as it gets.\par
+The menu is an essential part of any application. The menu is something every user has experience with and it is the first thing a user is met with when running an application. This means that the menu has to contain of certain classic elements.\par A user needs a way to close the application. On mobile phones nowadays this can be done with 'return' buttons on the phone, but applications generally have a built in exit function.\par
+The user also needs to have some sort of options menu and guidelines. This is a must for this application. Stacking LEGO seems simple and intuitive, but all the operations and possibilities is something that can confuse a potential user. \par
+Lastly the menu needs to have an easy access to the LEGO session itself. It shouldn't be complicated for the user to start a new LEGO session.
 \begin{center}
 	Insert sketch 1:
 \end{center}
@@ -28,9 +31,24 @@ After discussing menus in the context of the Hololens, it became apparent that t
 \\
 The idea came up that a menu with the same look and functionality of a tablet device could make interaction natural for the user. Having the ability to pick up, move and place the menu on a surface like a table or the floor seemed like a natural way of approaching the problem. The idea can be seen in a very early sketch in figure (HVILKEN FIGUR?):\\
 
-
 \begin{figure}
 \centering
   \includegraphics[width=0.9\columnwidth]{figures/Generator/gen6.png}
   \caption{Skriv lidt lækert her. }~\label{fig:genboard}
 \end{figure}
+
+\subsection{Design decisions}
+During the sketching phase, several design choices were discussed. One of the very first decisions made was the overall look of the menu. The choice of big buttons, clear visual cues and short textual descriptions was present in almost all of the sketches in the early design phase, as seen in figure (HVILKEN FIGURE???):\\
+\begin{figure}
+\centering
+  \includegraphics[width=0.9\columnwidth]{figures/Menu/menu2.png}
+  \caption{Skriv lidt lækert her. }~\label{fig:genboard}
+\end{figure}
+\begin{figure}
+\centering
+  \includegraphics[width=0.6\columnwidth]{figures/Menu/menu1.png}
+  \caption{Skriv lidt lækert her. }~\label{fig:genboard}
+\end{figure}
+
+\subsubsection{Moving away from a main menu}
+As the development of the application progressed it became more and more apparent that an actual main menu was not necessary. All the interactions needed for the prototype could be implemented through the generator board and could ease user interaction with the application. Insted of going through a main menu and then having the generator which contains the functionality for working with the LEGO bricks, spawning the generator board at the application start up and "cutting out the middleman" seemed as a natural choice for this prototype. Granted, with an eventual increase in functionality and complexity of the application, a root/main menu might prove useful as to not clutter the users experience when they are building as opposed to when they are in the main menu setting options, loading scenarios, downloading templates etc.
