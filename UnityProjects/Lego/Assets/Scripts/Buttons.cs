@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class Buttons : MonoBehaviour {
 
-	[SerializeField] private string parent;
-
 	// Use this for initialization
 	void Start () {
 		
