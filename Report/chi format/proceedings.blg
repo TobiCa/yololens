@@ -1,3 +1,10 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: proceedings.aux
 The style file: SIGCHI-Reference-Format.bst
-Database file #1: sample.bib
+I couldn't open database file sample.bib.bib
+---line 44 of file proceedings.aux
+ : \bibdata{sample.bib
+ :                    }
+I'm skipping whatever remains of this command
+I found no \citation commands---while reading file proceedings.aux
+I found no database files---while reading file proceedings.aux
+(There were 3 error messages)

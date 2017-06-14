@@ -7,7 +7,10 @@ using HoloToolkit.Unity.InputModule;
 public class Generator : MonoBehaviour {
 
     public float brickScale = .25f;
+    public float templateScale = .001f;
+
     public GameObject[] bricks;
+    public GameObject[] templates;
 
     private System.Random rnd = new System.Random();
 
@@ -80,6 +83,30 @@ public class Generator : MonoBehaviour {
         Vector3 boxC = new Vector3(boxCollider.center.x, boxCollider.center.y, 0.5f);
         boxCollider.center = boxC;
         //boxCollider.center = boxColliderCenter * brickScale;
+        rigidBody.useGravity = false;
+        rigidBody.isKinematic = true;
+    }
+    public void InstantiateTemplate(int i)
+    {
+
+        var currentPos = transform.position;
+
+        var where = .512f;
+        var x = currentPos.x + where;
+        var y = currentPos.y;
+        var z = currentPos.z - where;
+
+        var pos = new Vector3(x, y, z);
+        var rot = Quaternion.Euler(0, 0, 0);
+        GameObject go = Instantiate(templates[i], pos, rot) as GameObject;
+        go.tag = "Template";
+        go.transform.localScale = new Vector3(templateScale, templateScale, templateScale);
+        var script = go.AddComponent<Brick>();
+        script.scaleStuff = this.templateScale;
+        script.rotation = rot;
+        go.AddComponent<HandDraggable>();
+        Rigidbody rigidBody = go.AddComponent<Rigidbody>();
+        BoxCollider boxCollider = go.AddComponent<BoxCollider>();
         rigidBody.useGravity = false;
         rigidBody.isKinematic = true;
     }
