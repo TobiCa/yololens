@@ -22,6 +22,12 @@ In this application the tap method is used. Here there are two different states 
 The single tap is used to navigate in the menu on the generator. The HoloToolkit provides functionality, such that objects can be dragged by holding tap. This is used to drag LEGO bricks and the generator around.
 
 \subsection{Unity scripts}
-\subsubsection{Bricks}
-\subsubsection{Templates}
+While the HoloToolkit implements the augmentation of objects, the custom Unity scripts implement LEGO functionality. These scripts control the behaviour of the LEGO bricks, the generator and templates. 
+
 \subsubsection{Generator}
+The generator script contains the main functionality of the implemented code. Menu interactions are implemented here and thus the necessary functions to instantiate and model bricks. The instantiation is done by loading the prefabricated LEGO brick object, and colouring it depending on user input. A brick is not affected by gravity until the user interacts with the brick. For simplicity the number of shapes a brick can have is limited. \\
+Templates are implemented in a similar way as bricks, except that these can not be coloured. Also the sandbox feature is implemented in the generator script. It generates 20 bricks with random shape and colour. \\
+The menu on the generator works by activating and deactivating the appropriate menu items. 
+
+\subsubsection{Bricks and Templates}
+The brick and template scripts work in a similar ways. They both make sure that the generated objects do not rotate and do snap to a grid. An one-by-one brick is 0.8cm long and wide and 0.96cm high (with know). Thus bricks are forced to lay in position, which is a multiple of 0.8.
