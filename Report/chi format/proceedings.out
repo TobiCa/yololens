@@ -1,10 +1,10 @@
 \BOOKMARK [1][-]{section*.3}{Introduction}{}% 1
-\BOOKMARK [1][-]{section*.4}{Design}{}% 2
-\BOOKMARK [2][-]{section*.5}{How do we access the application? \(Menu\)}{section*.4}% 3
-\BOOKMARK [2][-]{section*.6}{The main menu screen}{section*.4}% 4
+\BOOKMARK [1][-]{section*.4}{Design Challenges}{}% 2
+\BOOKMARK [2][-]{section*.5}{How should the user access the application?}{section*.4}% 3
+\BOOKMARK [2][-]{section*.6}{The Main Menu}{section*.4}% 4
 \BOOKMARK [2][-]{section*.7}{The generator board}{section*.4}% 5
 \BOOKMARK [2][-]{section*.8}{Design decisions}{section*.4}% 6
-\BOOKMARK [3][-]{section*.9}{Moving away from a main menu}{section*.8}% 7
+\BOOKMARK [2][-]{section*.9}{Moving away from a main menu}{section*.4}% 7
 \BOOKMARK [1][-]{section*.10}{Implementation}{}% 8
 \BOOKMARK [2][-]{section*.11}{Unity}{section*.10}% 9
 \BOOKMARK [2][-]{section*.12}{Holotoolkit}{section*.10}% 10

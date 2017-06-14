@@ -32,8 +32,22 @@
 \ifx \showarticletitle \undefined \def \showarticletitle #1{#1}   \fi
 \ifx \showURL      \undefined \def \showURL       #1{#1}          \fi
 
+<<<<<<< HEAD
 \bibitem{multifi}
 {Aaron Quigley Dieter~Schmalstieg Jens~Grubert, Matthias~Heinisch}. 2015.
+=======
+\bibitem{azuma}
+{Ronald Azuma}, {Yohan Baillot}, {Steven~Feiner Reinhod~Behringer}, {Simon
+  Julier}, {and} {Blair MacIntyre}. 2001.
+\newblock \showarticletitle{Recent Advances in Augmented Reality}.
+\newblock  (2001).
+\newblock
+
+
+\bibitem{multifi}
+{Jens Grubert}, {Matthias Heinisch}, {and} {Dieter~Schmalstieg Aaron~Quigley}.
+  2015.
+>>>>>>> a7e21762e4c9d1e38b3fce10b0783f289f3d9a1f
 \newblock \showarticletitle{MultiFi: Multi-Fidelity Interaction with Displays
   On and Around the BodyReality}.
 \newblock  (2015).
@@ -48,6 +62,7 @@
 \newblock
 
 
+<<<<<<< HEAD
 \bibitem{azuma}
 {Reinhod Behringer Steven Feiner Simon Julier Blair~MacIntyre Ronald~Azuma,
   Yohan~Baillot}. 2001.
@@ -58,6 +73,10 @@
 
 \bibitem{skin}
 {Gierad Laput Chris~Harrison Yang~Zhang, Junhan~Zhou}. 2016.
+=======
+\bibitem{skin}
+{Yang Zhang}, {Junhan Zhou}, {Gierad Laput}, {and} {Chris Harrison}. 2016.
+>>>>>>> a7e21762e4c9d1e38b3fce10b0783f289f3d9a1f
 \newblock \showarticletitle{SkinTrack: Using the Body as an Electrical
   Waveguide for Continuous Finger Tracking on the Skin}.
 \newblock  (2016).
