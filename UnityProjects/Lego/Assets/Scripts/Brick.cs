@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class Brick : MonoBehaviour {
 
-	[SerializeField] private int rotation = 90;
+    [SerializeField] public Quaternion rotation = Quaternion.Euler(-90f,90f,0f);
     [SerializeField] private int id;
     [SerializeField] private int width;
     [SerializeField] private int hight;
@@ -30,7 +30,7 @@ public class Brick : MonoBehaviour {
     
     // Update is called once per frame
     void Update () {
-        transform.rotation = Quaternion.Euler(-90, rotation, 0);
+        transform.rotation = this.rotation;
 
         var currentPos = transform.position;
 
