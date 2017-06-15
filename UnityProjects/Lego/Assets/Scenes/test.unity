@@ -884,12 +884,12 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 0}
-        m_MethodName: goToLevel
-        m_Mode: 5
+        m_MethodName: 
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 3
           m_FloatArgument: 0
           m_StringArgument: onlineMenu
           m_BoolArgument: 0
@@ -1311,12 +1311,12 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 0}
-        m_MethodName: ChangeColor
-        m_Mode: 5
+        m_MethodName: 
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 2
           m_FloatArgument: 0
           m_StringArgument: red
           m_BoolArgument: 0
@@ -1367,7 +1367,7 @@ GameObject:
   - component: {fileID: 656039916}
   - component: {fileID: 656039915}
   m_Layer: 5
-  m_Name: falcon
+  m_Name: racer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1430,13 +1430,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: goToLevel
-        m_Mode: 5
+      - m_Target: {fileID: 847612490}
+        m_MethodName: InstantiateTemplate
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 2
           m_FloatArgument: 0
           m_StringArgument: rootMenu
           m_BoolArgument: 0
@@ -1462,7 +1462,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Texture: {fileID: 2800000, guid: e185666c60dc04945b6b15a098441ef6, type: 3}
+  m_Texture: {fileID: 2800000, guid: e30fad79c0c12754a86d9b8484ac66f2, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -1921,11 +1921,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   brickScale: 0.1
+  templateScales:
+  - 0.001
+  - 0.003
+  - 0.001
+  - 0.001
   bricks:
   - {fileID: 100000, guid: 35961872cb4a7634f8def1a93505a17b, type: 3}
   - {fileID: 100000, guid: dd95c522125df8b46943b1cb977d4dd1, type: 3}
   - {fileID: 100000, guid: a370befb5b1f69346b3b3cb49331be35, type: 3}
   - {fileID: 100000, guid: 8eed5d12ed8744143a02f992c6d4ce5b, type: 3}
+  templates:
+  - {fileID: 100382, guid: 868b417b92a1d2a4186682135ff8b3c8, type: 3}
+  - {fileID: 100000, guid: 758c829e352e401449e959133123caf1, type: 3}
+  - {fileID: 100000, guid: f4a2383bec9b140428b9ab202b8bf4f3, type: 3}
+  - {fileID: 101120, guid: 848985d0475680147a5cf8d9208d7b2c, type: 3}
 --- !u!54 &847612491
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2016,13 +2026,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: goToLevel
-        m_Mode: 5
+      - m_Target: {fileID: 847612490}
+        m_MethodName: InstantiateTemplate
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: onlineMenu
           m_BoolArgument: 0
@@ -2402,10 +2412,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 326013bd1438f4d49a6b068c72c2e326, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotation: 0
-  id: 0
-  width: 2
-  hight: 4
+  rotation: {x: -0.49999997, y: 0.49999997, z: 0.49999997, w: 0.49999997}
   scaleStuff: 0.005
 --- !u!65 &1195158999
 BoxCollider:
@@ -2833,10 +2840,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 326013bd1438f4d49a6b068c72c2e326, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotation: 0
-  id: 0
-  width: 2
-  hight: 4
+  rotation: {x: -0.49999997, y: 0.49999997, z: 0.49999997, w: 0.49999997}
   scaleStuff: 0.005
 --- !u!65 &1453772731
 BoxCollider:
@@ -3283,10 +3287,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 326013bd1438f4d49a6b068c72c2e326, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotation: 0
-  id: 0
-  width: 2
-  hight: 4
+  rotation: {x: -0.49999997, y: 0.49999997, z: 0.49999997, w: 0.49999997}
   scaleStuff: 0.005
 --- !u!65 &1890189383
 BoxCollider:
@@ -3439,7 +3440,7 @@ GameObject:
   - component: {fileID: 1907096972}
   - component: {fileID: 1907096971}
   m_Layer: 5
-  m_Name: xwing
+  m_Name: whitehouse
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3502,13 +3503,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: ChangeColor
-        m_Mode: 5
+      - m_Target: {fileID: 847612490}
+        m_MethodName: InstantiateTemplate
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 3
           m_FloatArgument: 0
           m_StringArgument: rootMenu
           m_BoolArgument: 0
@@ -3534,7 +3535,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Texture: {fileID: 2800000, guid: 7a1a1e1aa6e99a24d9cabd94bdcf5532, type: 3}
+  m_Texture: {fileID: 2800000, guid: cd9d0f86a0392994b823b618b42087c6, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -3742,9 +3743,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: ChangeColor
-        m_Mode: 5
+      - m_Target: {fileID: 847612490}
+        m_MethodName: InstantiateTemplate
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine

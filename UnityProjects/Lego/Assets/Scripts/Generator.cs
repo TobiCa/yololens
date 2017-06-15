@@ -1,20 +1,16 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using System.Linq;
+﻿using UnityEngine;
 using HoloToolkit.Unity.InputModule;
 
 public class Generator : MonoBehaviour {
 
     public float brickScale = .25f;
+
+    public float[] templateScales;
+
     public GameObject[] bricks;
+    public GameObject[] templates;
 
     private System.Random rnd = new System.Random();
-
-    /*
-    private Vector3 boxColliderSize = new Vector3(32f, 16f, 10f);
-    private Vector3 boxColliderCenter = new Vector3(-16f, 8f, 5f);
-    */
 
     private string parent = "";
     private string level = "rootMenu";
@@ -30,7 +26,7 @@ public class Generator : MonoBehaviour {
     private Vector3 v3 = new Vector3(1,1,1);
 
     // Use this for initialization
-    void Start () {
+    void Start () { 
 
 	}
 
@@ -43,10 +39,9 @@ public class Generator : MonoBehaviour {
     }
 
     public void InstantiateBrick(int i) {
-
         var currentPos = transform.position;
 
-        var where = .512f;
+        var where = stdSizeX * brickScale * 3;
         var x = currentPos.x + where;
         var y = currentPos.y;
         var z = currentPos.z - where;
@@ -79,14 +74,34 @@ public class Generator : MonoBehaviour {
         boxCollider.size = boxS;
         Vector3 boxC = new Vector3(boxCollider.center.x, boxCollider.center.y, 0.5f);
         boxCollider.center = boxC;
-        //boxCollider.center = boxColliderCenter * brickScale;
         rigidBody.useGravity = false;
         rigidBody.isKinematic = true;
     }
 
-    public void Sandbox()
-    {
+    public void InstantiateTemplate(int i) { 
+        var currentPos = transform.position;
 
+        var where = .512f;
+        var x = currentPos.x + where;
+        var y = currentPos.y;
+        var z = currentPos.z - where;
+
+        var pos = new Vector3(x, y, z);
+        var rot = Quaternion.Euler(0, 0, 0);
+        GameObject go = Instantiate(templates[i], pos, rot) as GameObject;
+        go.tag = "Template";
+        go.transform.localScale = new Vector3(this.templateScales[i], this.templateScales[i], this.templateScales[i]);
+        var script = go.AddComponent<Template>();
+        script.scaleStuff = this.templateScales[i];
+        script.rotation = rot;
+        go.AddComponent<HandDraggable>();
+        Rigidbody rigidBody = go.AddComponent<Rigidbody>();
+        BoxCollider boxCollider = go.AddComponent<BoxCollider>();
+        rigidBody.useGravity = false;
+        rigidBody.isKinematic = true;
+    }
+
+    public void Sandbox() {
         this.isSandbox = true;
         for (int a =  0; a < 20; a++)
         {
@@ -97,7 +112,7 @@ public class Generator : MonoBehaviour {
         this.isSandbox = false; 
     }
 
-    public void ChangeColor(string newColor){
+    public void ChangeColor(string newColor) {
         switch(newColor){
             case "red":
                 color = Color.red;
@@ -131,13 +146,11 @@ public class Generator : MonoBehaviour {
         }
     }
 
-    public void goBack(){
-
+    public void goBack() {
         goToLevel(parent);
 
         if (parent == "onlineMenu"){
             parent = "rootMenu";
         }
-
     }
 }

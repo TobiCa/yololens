@@ -1,10 +1,10 @@
 
 
-Report/*.aux
-Report/*.bbl
-Report/*.blg
-Report/*.toc
-Report/*.log
-Report/*.out
-Report/*.synctex.gz
-Report/project.pdf
+Report/chi format/*.aux
+Report/chi format/*.bbl
+Report/chi format/*.blg
+Report/chi format/*.toc
+Report/chi format/*.log
+Report/chi format/*.out
+Report/chi format/*.synctex.gz
+Report/chi format/proceedings.pdf
