@@ -2,48 +2,49 @@
 
 \section{Design Challenges}
 \subsection{Accessibility}
-To manoeuvre around in any application, a menu is needed. The menu is something every user has experience with and it is the first thing a user is met with when running an application. This means that the menu has to consist of certain classic elements.\par A user needs a way to close the application. On mobile phones nowadays this can be done with 'return' buttons on the phone, but applications generally have a built in exit function.\par
+To manoeuvre around in any application, a menu is needed. The menu is something every user has experience with and it is the first thing a user is met with when accessing an application. This means that the menu has to consist of certain classic elements.\par A user needs a way to close the application. On mobile phones nowadays this can be done with 'return' buttons on the phone, but applications generally have a built in exit function.\par
 The user also needs to have some sort of options menu and guidelines. Stacking LEGO seems simple and intuitive, but all the operations and possibilities is something that can confuse a potential user. \par
 Lastly it shouldn't be complicated for the user to start a new LEGO session. \par
 \subsection{A Main Menu}
-To achieve accessibility a '5 plus 5' sketch generation session was held. Initially we thought about this application as a game, therefore the user would typically be met by a main menu screen, just as figure \ref{fig:menu8} illustrates.
-\begin{figure}[h]
+To achieve accessibility a '5 plus 5' sketch generation session was held. Initially we thought about this application as a game, therefore the user would typically be met by a main menu screen, as figure \ref{fig:menu8} depicts.
+\begin{figure}[t]
 	\centering
 	\includegraphics[width=0.7\linewidth]{figures/Menu/menu8}
-	\caption{The first idea of a seperate Main Menu screen}
+	\caption{Initial sketch of a separate Main Menu}
 	\label{fig:menu8}
 \end{figure}
-The user would open the Hololens application, and be met with a menu screen, where actions such as generating a play area, loading and saving a game and a way to quit the application were possible. \par
-One common theme in the sketching of the main menu was separating the design of the menu and the interaction techniques with the menu. This led to some sketches being focused on the interaction, such as figure \ref{fig:menugesture} depicts, and other sketches that solely focused on the menu design.\par
-\begin{figure}[h]
+The user would open the Hololens application, and be met with a menu screen, where actions such as generating a play area, loading/saving a game and a way to quit the application were possible. \par
+One common theme in the sketching of the main menu was separating the design of the menu and the interaction techniques with the menu. The fact that we were working with the Hololens, led to some sketches being focused on the interaction, such as figure \ref{fig:menugesture} depicts,  while other sketches solely focused on the design of the menu.\par
+\begin{figure}[t]
 	\centering
 	\includegraphics[width=0.7\linewidth]{figures/Menu/menu5}
-	\caption{A focus on gestures rather than design, impacted the design. The figure shows 5 different ways of creating an interactive menu for the user to use.}
+	\caption{A focus on gestures rather than design, impacted the design. The figure shows different ways of creating an interactive menu with gestures.}
 	\label{fig:menugesture}
 \end{figure}
 \par
-The possibilities with the HoloLens gestures and the augmented reality made it apparent that the menu had to be movable, either by closing and opening with the gestures available, or being able to move it around the play area. 
-\subsection{The Generator Board}
-After discussing menus in the context of the Hololens, it became apparent that there was a need for a menu that could be placed and interacted within the real world. This menu should only interact inside the play area, and have functions tied to the bricks. Figure \ref{fig:genboard1} is a sketch of what functionalities the generator board could have.
-\begin{figure}[h]
+The possibilities with the HoloLens gestures and the augmented reality made it apparent that the menu had to be moveable, either by closing and opening it with the available gestures, or the ability to place it in favorable self-chosen spots.
+\subsection{The Generator}
+After discussing menus in the context of the Hololens, it became apparent that there was a need for a menu that could be placed and interacted with in the real world. This menu should only interact with the play area, and have functions tied to the bricks. Figure \ref{fig:genboard1} is a sketch of the functionalities the generator could have, such as brick types and templates.
+\begin{figure}[t]
 	\centering
 	\includegraphics[width=0.7\columnwidth]{figures/Generator/gen5.png}
-	\caption{An initial sketch of how the generator board could look like. The menu screen has alot of functionalities, and the actions chosen happen on the right side.}~\label{fig:genboard1}
+	\caption{An initial sketch of how the generator could look like. The menu screen has alot of functionalities, and the actions chosen happen on the right side.}~\label{fig:genboard1}
 \end{figure}
-The generator board should be have functionalites that can alter the blocks, but also needs to be interactive and moveable in the play area.\par
-Figure \ref{fig:gentablet} illustrates how the generator board is placed on a table and used for generating bricks.
-\begin{figure}[h]
+The generator should be have functionalites that can alter the blocks, but also needs to be interactive and moveable in the play area.\par
+As Figure \ref{fig:gentablet} suggests, the generator could be placed on a table and used for generating bricks from that spot.
+\begin{figure}[t]
 	\centering
 	\includegraphics[width=0.7\columnwidth]{figures/Generator/gen6.png}
-	\caption{First sketch of the generator board as a movable object. Here placed on the table, spawning blocks on the table.}~\label{fig:gentablet}
+	\caption{First sketch of the generator as a movable object. Here placed on the table, spawning blocks on the table.}~\label{fig:gentablet}
 \end{figure}
-We designed the generator board as a tablet device. Being a solid familar object, makes it more intuitive and natural for the user to interact with. To lift, move and place the tablet on a surface is a simple and familiar task for the user. To accompany the tablet device, a simple interface was designed. The interface only needed simple function all tied to spawning lego bricks. The user can spawn bricks of different types, change colors and saving/loading a play scene.
-\subsection{Design Decisions}
-\begin{figure}[h]
+We designed the generator as a tablet device. Being a solid familar object, makes it more intuitive and natural for the user to interact with. To lift, move and place the tablet on a surface is a simple and familiar task for the user. To accompany the tablet device, a simple interface was designed. The interface only needed simple function all tied to spawning lego bricks. The user can spawn bricks of different types, change colors, save/load a play scene and spawn different prebuilt templates.
+\subsection{Final Design}
+During the sketching phase, several design choices were discussed. One of the very first concerns was the overall look of the main menu and the generator. The choice of big buttons, clear visual cues and short textual descriptions were present in almost all of the sketches in the early design phase. The need for a simple interface was a must, as stacking LEGO bricks shouldn't be a hassle. \par We wanted an effective and efficient process of interacting with LEGO. We also wanted the users to be satisfied when using our application. Therefore the menus should not be overcomplicated in functions and design, but not sparse in functions either. To achieve these 3 key elements we designed the menu content with simple LEGO thumbnails, that explained what each button did along with simple textual descriptions. \par
+As the development of the application progressed it became more  apparent that an actual main menu was not necessary. Using way too many menus in our simple interactive application would hinder the effectiveness and efficiency for the user, because of the limited functions our prototype had to offer. \par To circumvent a clonky and cluttered experience for the user we decided on creating a tablet looking generator. Using a single solid object with all functionalities in the same place, would ease the user interaction. Instead of going through a main menu and then having the generator menu, which contains the functionality for working with the LEGO bricks, we decided on spawning the generator at the application start up. Due to the way our prototype works it seems as a natural choice to "cut out the middleman", here the main menu.  \par Granted, with an eventual increase in functionality and complexity of the application, a root/main menu might prove useful as to not clutter the users experience when they are building as opposed to when they are in the main menu, where setting options, loading scenarios, downloading templates etc. would be a valid solution.\par
+\begin{figure}[t]
 	\centering
-	\includegraphics[width=0.5\columnwidth]{figures/Menu/menu1.png}
-	\caption{Initial Main Menu screen with big buttons, simple interaction and short descriptions.}~\label{fig:genboard}
+	\includegraphics[width=0.7\columnwidth]{figures/Generator/gen6.png}
+	\caption{First sketch of the generator as a movable object. Here placed on the table, spawning blocks on the table.}~\label{fig:finaldesign}
 \end{figure}
-During the sketching phase, several design choices were discussed. One of the very first concerns was the overall look of the main menu. The choice of big buttons, clear visual cues and short textual descriptions was present in almost all of the sketches in the early design phase, as seen in figure \ref{fig:genboard}. The generator board needed to have the same simple design. We decided The menus should not be overcomplicated, but not sparse in functions either.\par
-As the development of the application progressed it became more  apparent that an actual main menu was not necessary. All the interactions needed for the prototype could be implemented  the tablet looking generator board and could ease user interaction with the application. Instead of going through a main menu and then having the generator which contains the functionality for working with the LEGO bricks, spawning the generator board at the application start up and "cutting out the middleman" seemed as a natural choice for this prototype. Granted, with an eventual increase in functionality and complexity of the application, a root/main menu might prove useful as to not clutter the users experience when they are building as opposed to when they are in the main menu setting options, loading scenarios, downloading templates etc. 
+In the final design the user is met by a tablet device, consisting of large buttons with thumbnails and text explaining what each action does. As figure \ref{fig:finaldesign} shows, the user can choose different brick types and colors, as well as having a sandbox mode where a random amount of bricks are spawned to play with. The user can also spawn prebuilt templates, save/load previous sessions and go back to the main menu with a 'back' button. 
 
