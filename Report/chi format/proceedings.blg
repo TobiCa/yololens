@@ -1,14 +1,7 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: proceedings.aux
-White space in argument---line 21 of file proceedings.aux
- : \citation{str\T1\o
- :                    m}
-I'm skipping whatever remains of this command
-White space in argument---line 23 of file proceedings.aux
- : \citation{str\T1\o
- :                    m}
-I'm skipping whatever remains of this command
 The style file: SIGCHI-Reference-Format.bst
 Database file #1: sample.bib
+Warning--I didn't find a database entry for "stroem"
 Warning--no journal in azuma
 Warning--no number and no volume in azuma
 Warning--page numbers missing in both pages and numpages fields in azuma
@@ -21,9 +14,9 @@ Warning--page numbers missing in both pages and numpages fields in multifi
 Warning--no journal in kim
 Warning--no number and no volume in kim
 Warning--page numbers missing in both pages and numpages fields in kim
-Warning--no journal in strøm
-Warning--no number and no volume in strøm
-Warning--page numbers missing in both pages and numpages fields in strøm
+Warning--no journal in strom
+Warning--no number and no volume in strom
+Warning--page numbers missing in both pages and numpages fields in strom
 Warning--no journal in finger
 Warning--no number and no volume in finger
 Warning--page numbers missing in both pages and numpages fields in finger
@@ -33,4 +26,4 @@ Warning--page numbers missing in both pages and numpages fields in watchsense
 Warning--no journal in skin
 Warning--no number and no volume in skin
 Warning--page numbers missing in both pages and numpages fields in skin
-(There were 2 error messages)
+(There were 25 warnings)
