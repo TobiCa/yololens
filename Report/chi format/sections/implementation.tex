@@ -9,15 +9,15 @@ The LegoLens application is built using Unity, where custom scripts are written 
 For initial testing the Microsoft Hololens Emulator was used, while in later stages the application was deployed directly to the Hololens device. 
 
 \subsection{HoloToolkit}
-The HoloToolkit provide implementations of common tasks in developing applications for the Hololens. This kit implements functionality, which is mostly Hololens specific, such as spartial mapping and understanding. Also functionality for input methods are provided. The Hololens comes with two build-in gestures: the bloom and the tap.
+The HoloToolkit provide implementations of common tasks in developing applications for the Hololens. This kit implements functionality, which is mostly Hololens specific, such as spatial mapping and understanding. Also functionality for input methods are provided. The Hololens comes with two build-in gestures: the bloom and the tap.
 
-\subsubsection{Sparital mapping and understanding}
+\subsubsection{Spatial mapping and understanding}
 These two functionalities are fundamental for the use of the Hololens, since they let the Hololens understand the shape of a room. Thereby virtual objects can be placed in the real world. The toolkit provides prefabricated functionality for spartial mapping and understanding, which simply can be added in Unity.  \\
 The Hololens uses a depth camera similar to the camera build into the Kinect v2 and four cameras meant to understand environment.\footnote{\url{https://developer.microsoft.com/en-us/windows/mixed-reality/hololens_hardware_details}} The spatial mapping relies on the time-of-flight Kinect-like depth camera and the four RGB cameras to provide a robust tracking of the enviroment. \\
 This connection between the real-world and digital playground created in the application was essential, both to the experience but also to make the application augmenting the reality. The mapping allows to create a relative coordinate system, such that virtual objects can be placed in accurately.
 
 \subsubsection{Input methods}
-The Hololens tracks the gaze of the wearer, by the assumption that the wearer always looks straight ahead. This is trough the limitations of the Hololens, which does not provide augmentation for the whole field of view. Thus if the wearers eyes would be tracked, the wearer could gaze outside of the Hololens field og view. In this application a cursor appears where the gaze of the wearer collides with mapped objects in the real world or objects created by the application.\\ 
+The Hololens tracks the gaze of the wearer, by the assumption that the wearer always looks straight ahead. This is the limitations of the Hololens, which does not provide augmentation for the whole field of view. Thus if the wearers eyes would be tracked, the wearer could gaze outside of the Hololens field of view. In this application a cursor appears where the gaze of the wearer collides with mapped objects in the real world or objects created by the application.\\ 
 In this application the tap method is used. Here there are two different states the interaction can have: a single tap and dragging. \\
 The single tap is used to navigate in the menu on the generator. The HoloToolkit provides functionality, such that objects can be dragged by holding tap. This is used to drag LEGO bricks and the generator around.
 
@@ -30,4 +30,4 @@ Templates are implemented in a similar way as bricks, except that these can not 
 The menu on the generator works by activating and deactivating the appropriate menu items. 
 
 \subsubsection{Bricks and Templates}
-The brick and template scripts work in a similar ways. They both make sure that the generated objects do not rotate and do snap to a grid. An one-by-one brick is 0.8cm long and wide and 0.96cm high (with know). Thus bricks are forced to lay in position, which is a multiple of 0.8.
+The brick and template scripts work in a similar ways. They both make sure that the generated objects do not rotate and do snap to a grid. An one-by-one brick is 0.8cm long and wide and 0.96cm high (with knobs). Thus bricks are forced to lay in positions which are a multiples of 0.8.
