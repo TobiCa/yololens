@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.18)  16 JUN 2017 17:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.18)  16 JUN 2017 17:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1382,12 +1382,12 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
 Missing character: There is no ø in font ptmb7t!
 
 (./sections/introduction.tex)
-Underfull \hbox (badness 10000) in paragraph at lines 4--117
+Underfull \hbox (badness 10000) in paragraph at lines 4--118
 
  []
 
 
-Underfull \hbox (badness 1515) in paragraph at lines 4--117
+Underfull \hbox (badness 1515) in paragraph at lines 4--118
 \T1/ptm/m/n/10 (+20) The ap-pli-ca-tion this re-port will cover re-volves aroun
 d
  []
@@ -1514,32 +1514,32 @@ Underfull \hbox (badness 10000) in paragraph at lines 6--10
  []
 
 )
-Underfull \hbox (badness 10000) in paragraph at lines 12--129
+Underfull \hbox (badness 10000) in paragraph at lines 12--130
 
  []
 
 
-Underfull \hbox (badness 3428) in paragraph at lines 12--129
+Underfull \hbox (badness 3428) in paragraph at lines 12--130
 \T1/ptm/m/n/10 (+20) The num-ber of in-put meth-ods im-ple-mented into the
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 12--129
+Underfull \hbox (badness 10000) in paragraph at lines 12--130
 
  []
 
 
-Underfull \hbox (badness 1931) in paragraph at lines 12--129
+Underfull \hbox (badness 1931) in paragraph at lines 12--130
 \T1/ptm/m/n/10 (+20) There is a se-vere short-age of bricks avail-able in the
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 12--129
+Underfull \hbox (badness 10000) in paragraph at lines 12--130
 
  []
 
 
-Underfull \hbox (badness 2221) in paragraph at lines 12--129
+Underfull \hbox (badness 2221) in paragraph at lines 12--130
 \T1/ptm/m/n/10 (+20) Improving the sta-bil-ity of the spa-tial map-ping would
  []
 
@@ -1547,22 +1547,22 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.129 
+l.130 
        [5] (./sections/conclusion.tex) (./proceedings.bbl)pdfTeX warning (ext4)
 : destination with the same identifier (name{page.}) has been already used, dup
 licate ignored
 <to be read again> 
                    \relax 
-l.161 \end{document}
+l.162 \end{document}
                      [6]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 161.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 161.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 162.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 162.
  (./proceedings.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 161.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 161.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 162.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 162.
 Package rerunfilecheck Info: File `proceedings.out' has not changed.
 (rerunfilecheck)             Checksum: B42A63149FD4D83E9139E8B9494CE411;1563.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 161.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 162.
  ) 
 Here is how much of TeX's memory you used:
  19859 strings out of 493089
@@ -1607,7 +1607,7 @@ st/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/t
 ype1/urw/times/utmbi8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/
 times/utmr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmr
 i8a.pfb>
-Output written on proceedings.pdf (6 pages, 692762 bytes).
+Output written on proceedings.pdf (6 pages, 692771 bytes).
 PDF statistics:
  291 PDF objects out of 1000 (max. 8388607)
  242 compressed objects within 3 object streams
