@@ -2,19 +2,19 @@
 \section{Implementation}
 
 \subsection{Language and tools}
-The LegoLens application is built using Unity, where custom scripts are written in C\#. Unity is chosen, since it is used in Microsofts own Hololens academy.\footnote{\url{https://developer.microsoft.com/en-us/windows/mixed-reality/academy}} Microsoft also provides a software toolkit called HoloToolkit\footnote{\url{https://github.com/Microsoft/HoloToolkit-Unity}}, which binds Unity and the Hololens together. \\
-For initial testing the Microsoft Hololens Emulator was used, while in later stages the application was deployed directly to the Hololens device. 
+The LegoLens application is built using Unity, where custom scripts are written in C\#. Unity is chosen, since it is used in Microsofts own HoloLens academy.\footnote{\url{https://developer.microsoft.com/en-us/windows/mixed-reality/academy}} Microsoft also provides a software toolkit called HoloToolkit\footnote{\url{https://github.com/Microsoft/HoloToolkit-Unity}}, which binds Unity and the HoloLens together. \\
+For initial testing the Microsoft HoloLens Emulator was used, while in later stages the application was deployed directly to the HoloLens device. 
 
 \subsection{HoloToolkit}
-The HoloToolkit provides implementations of common tasks in developing applications for the Hololens. This kit implements functionality, which is mostly Hololens specific, such as spatial mapping and understanding. Also functionality for input methods are provided. The Hololens comes with two build-in gestures: the bloom and the tap.
+The HoloToolkit provides implementations of common tasks in developing applications for the HoloLens. This kit implements functionality which is mostly HoloLens specific, such as spatial mapping and understanding. Also functionality for input methods are provided. The HoloLens comes with two build-in gestures: the bloom and the tap.
 
 \subsubsection{Spatial mapping and understanding}
-These two functionalities are fundamental for the use of the Hololens, since they let the Hololens understand the shape of a room. Thereby virtual objects can be placed in the real world. The toolkit provides prefabricated functionality for spatial mapping and understanding, which simply can be added in Unity.  \\
-The Hololens uses a depth camera similar to the camera build into the Kinect v2 and four cameras meant to understand environment.\footnote{\url{https://developer.microsoft.com/en-us/windows/mixed-reality/hololens_hardware_details}} The spatial mapping relies on the time-of-flight Kinect-like depth camera and the four RGB cameras to provide a robust tracking of the enviroment. \\
+These two functionalities are fundamental for the use of the HoloLens, since they let the HoloLens understand the shape of a room. Thereby virtual objects can be placed in the real world. The toolkit provides prefabricated functionality for spatial mapping and understanding, which simply can be added in Unity.  \\
+The HoloLens uses a depth camera similar to the camera build into the Kinect v2 and four cameras meant to understand environment.\footnote{\url{https://developer.microsoft.com/en-us/windows/mixed-reality/hololens_hardware_details}} The spatial mapping relies on the time-of-flight Kinect-like depth camera and the four RGB cameras to provide a robust tracking of the enviroment. \\
 This connection between the real-world and digital playground created in the application was essential, both to the experience but also to make the application augmenting the reality. The mapping allows to create a relative coordinate system, such that virtual objects can be placed in accurately.
 
 \subsubsection{Input methods}
-The Hololens tracks the gaze of the wearer, by the assumption that the wearer always looks straight ahead. This is the limitations of the Hololens, which does not provide augmentation for the whole field of view. Thus if the wearers eyes would be tracked, the wearer could gaze outside of the Hololens field of view. In this application a cursor appears where the gaze of the wearer collides with mapped objects in the real world or objects created by the application.\\ 
+The HoloLens tracks the gaze of the wearer, by the assumption that the wearer always looks straight ahead. This is the limitations of the HoloLens, which does not provide augmentation for the whole field of view. Thus if the wearers eyes would be tracked, the wearer could gaze outside of the HoloLens field of view. In this application a cursor appears where the gaze of the wearer collides with mapped objects in the real world or objects created by the application.\\ 
 In this application the tap method is used. Here there are two different states the interaction can have: a single tap and dragging. \\
 The single tap is used to navigate in the menu on the generator. The HoloToolkit provides functionality, such that objects can be dragged by holding tap. This is used to drag LEGO bricks and the generator around.
 
@@ -27,4 +27,4 @@ Templates are implemented in a similar way as bricks, except that these can not 
 The menu itself on the generator works by activating and deactivating the appropriate menu items.
 
 \subsubsection{Bricks and Templates}
-As described above, the brick and template scripts work in a similar way. They both make sure that the generated objects do not rotate and do snap to a grid. A one-by-one brick is 0.8cm long and wide and 0.96cm tall (with knobs). Thus bricks are forced to be placed in positions which are multiples of 0.8.
+As described above, the brick and template scripts work in a similar way. They both make sure that the generated objects do not rotate and snap to a grid. A one-by-one brick is 0.8cm long and wide and 0.96cm tall (with knobs). Thus bricks are forced to be placed in positions which are multiples of 0.8.
