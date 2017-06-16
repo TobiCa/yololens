@@ -1,7 +1,11 @@
-This is BibTeX, Version 0.99dThe top-level auxiliary file: proceedings.aux
+This is BibTeX, Version 0.99d (TeX Live 2015)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: proceedings.aux
 The style file: SIGCHI-Reference-Format.bst
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Database file #1: sample.bib
-Warning--I didn't find a database entry for "stroem"
+Reallocated singl_function (elt_size=4) to 100 items from 50.
 Warning--no journal in azuma
 Warning--no number and no volume in azuma
 Warning--page numbers missing in both pages and numpages fields in azuma
@@ -14,9 +18,9 @@ Warning--page numbers missing in both pages and numpages fields in multifi
 Warning--no journal in kim
 Warning--no number and no volume in kim
 Warning--page numbers missing in both pages and numpages fields in kim
-Warning--no journal in strom
-Warning--no number and no volume in strom
-Warning--page numbers missing in both pages and numpages fields in strom
+Warning--no journal in stroem
+Warning--no number and no volume in stroem
+Warning--page numbers missing in both pages and numpages fields in stroem
 Warning--no journal in finger
 Warning--no number and no volume in finger
 Warning--page numbers missing in both pages and numpages fields in finger
@@ -26,4 +30,45 @@ Warning--page numbers missing in both pages and numpages fields in watchsense
 Warning--no journal in skin
 Warning--no number and no volume in skin
 Warning--page numbers missing in both pages and numpages fields in skin
-(There were 25 warnings)
+You've used 8 entries,
+            5283 wiz_defined-function locations,
+            1246 strings with 15280 characters,
+and the built_in function-call counts, 5631 in all, are:
+= -- 486
+> -- 285
+< -- 0
++ -- 92
+- -- 99
+* -- 445
+:= -- 722
+add.period$ -- 40
+call.type$ -- 8
+change.case$ -- 60
+chr.to.int$ -- 8
+cite$ -- 32
+duplicate$ -- 465
+empty$ -- 353
+format.name$ -- 120
+if$ -- 1226
+int.to.chr$ -- 1
+int.to.str$ -- 0
+missing$ -- 32
+newline$ -- 90
+num.names$ -- 48
+pop$ -- 245
+preamble$ -- 1
+purify$ -- 92
+quote$ -- 0
+skip$ -- 109
+stack$ -- 0
+substring$ -- 306
+swap$ -- 8
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 72
+warning$ -- 24
+while$ -- 33
+width$ -- 0
+write$ -- 129
+(There were 24 warnings)

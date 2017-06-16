@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.18)  16 JUN 2017 16:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.18)  16 JUN 2017 17:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1392,40 +1392,16 @@ Underfull \hbox (badness 1515) in paragraph at lines 4--117
 d
  []
 
-(./sections/related.tex
-LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 5.
+(./sections/related.tex) (./sections/design.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
-LaTeX Warning: Citation `watchsense' on page \thepage  undefined on input line 
-5.
-
-
-LaTeX Warning: Citation `back' on page \thepage  undefined on input line 6.
-
-
-LaTeX Warning: Citation `stroem' on page \thepage  undefined on input line 7.
-
-
-LaTeX Warning: Citation `finger' on page \thepage  undefined on input line 7.
-
-
-LaTeX Warning: Citation `stroem' on page \thepage  undefined on input line 7.
-
-
-LaTeX Warning: Citation `finger' on page \thepage  undefined on input line 7.
-
-
-LaTeX Warning: Citation `multifi' on page \thepage  undefined on input line 8.
-
-) (./sections/design.tex [1{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/
-updmap/pdftex.map}
+ [1{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 
 Non-PDF special ignored!
 
 ]
-<figures/Menu/menu8_1.pdf, id=117, 813.03848pt x 664.16331pt>
+<figures/Menu/menu8_1.pdf, id=138, 813.03848pt x 664.16331pt>
 File: figures/Menu/menu8_1.pdf Graphic file (type pdf)
 
 <use figures/Menu/menu8_1.pdf>
@@ -1434,39 +1410,45 @@ Package pdftex.def Info: figures/Menu/menu8_1.pdf used on input line 12.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <8> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 13.
 
-<figures/Menu/menu5_1.pdf, id=119, 152.85104pt x 244.99629pt>
+<figures/Menu/menu5_1.pdf, id=140, 152.85104pt x 244.99629pt>
 File: figures/Menu/menu5_1.pdf Graphic file (type pdf)
 
 <use figures/Menu/menu5_1.pdf>
 Package pdftex.def Info: figures/Menu/menu5_1.pdf used on input line 20.
 (pdftex.def)             Requested size: 210.78827pt x 337.87466pt.
 
-<figures/Generator/gen5_1.pdf, id=121, 1064.28622pt x 335.7082pt>
+<figures/Generator/gen5_1.pdf, id=142, 1064.28622pt x 335.7082pt>
 File: figures/Generator/gen5_1.pdf Graphic file (type pdf)
 
 <use figures/Generator/gen5_1.pdf>
 Package pdftex.def Info: figures/Generator/gen5_1.pdf used on input line 30.
 (pdftex.def)             Requested size: 210.78827pt x 66.48477pt.
 
-<figures/Generator/gen6_1.pdf, id=123, 940.40538pt x 562.10704pt>
+<figures/Generator/gen6_1.pdf, id=144, 940.40538pt x 562.10704pt>
 File: figures/Generator/gen6_1.pdf Graphic file (type pdf)
 
 <use figures/Generator/gen6_1.pdf>
 Package pdftex.def Info: figures/Generator/gen6_1.pdf used on input line 37.
 (pdftex.def)             Requested size: 210.78827pt x 125.9883pt.
 
-<figures/Generator/gen6.png, id=124, 1071.40276pt x 646.8165pt>
+<figures/Generator/gen6.png, id=145, 1071.40276pt x 646.8165pt>
 File: figures/Generator/gen6.png Graphic file (type png)
 
 <use figures/Generator/gen6.png>
 Package pdftex.def Info: figures/Generator/gen6.png used on input line 49.
 (pdftex.def)             Requested size: 210.78827pt x 127.2489pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.53 
-      [2 <./figures/Menu/menu8_1.pdf> <./figures/Menu/menu5_1.pdf>])
+      [2 <./figures/Menu/menu8_1.pdf> <./figures/Menu/menu5_1.pdf>]
+Underfull \vbox (badness 1776) has occurred while \output is active []
+
+)
 (./sections/implementation.tex
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 5.
@@ -1501,7 +1483,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.20 
+l.15 
       [3 <./figures/Generator/gen5_1.pdf> <./figures/Generator/gen6_1.pdf> <./f
 igures/Generator/gen6.png>]) (./sections/evaluation.tex
 LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <10> not available
@@ -1521,19 +1503,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 25--27
 
  []
 
-)pdfTeX warning (ext4): destination with the same identifier (name{page.}) has 
-been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
+een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.125 
-       [4] (./sections/discussion.tex) (./sections/future.tex
+l.27 
+      [4]) (./sections/discussion.tex) (./sections/future.tex
 Underfull \hbox (badness 10000) in paragraph at lines 6--10
 
  []
-
-
-LaTeX Warning: Citation `watchsense' on page \thepage  undefined on input line 
-14.
 
 )
 Underfull \hbox (badness 10000) in paragraph at lines 12--129
@@ -1565,48 +1543,43 @@ Underfull \hbox (badness 2221) in paragraph at lines 12--129
 \T1/ptm/m/n/10 (+20) Improving the sta-bil-ity of the spa-tial map-ping would
  []
 
-(./sections/conclusion.tex)
-No file proceedings.bbl.
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
+l.129 
+       [5] (./sections/conclusion.tex) (./proceedings.bbl)pdfTeX warning (ext4)
+: destination with the same identifier (name{page.}) has been already used, dup
+licate ignored
+<to be read again> 
+                   \relax 
 l.161 \end{document}
-                     [5]
+                     [6]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 161.
-pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
-een already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.161 \end{document}
-                     [6
-
-]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 161.
  (./proceedings.aux)
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 161.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 161.
-
-
-Package rerunfilecheck Warning: File `proceedings.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `proceedings.out':
-(rerunfilecheck)             Before: E8C007C750B27580B51DD50B0DA294CF;1466
-(rerunfilecheck)             After:  6ECEEC224E4DD2D1DD7D764D11968593;1514.
+Package rerunfilecheck Info: File `proceedings.out' has not changed.
+(rerunfilecheck)             Checksum: B42A63149FD4D83E9139E8B9494CE411;1563.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 161.
  ) 
 Here is how much of TeX's memory you used:
- 19826 strings out of 493089
- 359566 string characters out of 6134841
- 443387 words of memory out of 5000000
- 22648 multiletter control sequences out of 15000+600000
- 78294 words of font info for 231 fonts, out of 8000000 for 9000
+ 19859 strings out of 493089
+ 359884 string characters out of 6134841
+ 444608 words of memory out of 5000000
+ 22660 multiletter control sequences out of 15000+600000
+ 75881 words of font info for 235 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,10n,56p,858b,403s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{section*.24} has been referenced but does not exi
+pdfTeX warning (dest): name{section*.28} has been referenced but does not exi
 st, replaced by a fixed one
+
+pdfTeX warning (dest): name{section*.27} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{section*.24} has been referenced but does not exist
+, replaced by a fixed one
 
 pdfTeX warning (dest): name{section*.21} has been referenced but does not exist
 , replaced by a fixed one
@@ -1634,10 +1607,10 @@ st/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/t
 ype1/urw/times/utmbi8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/
 times/utmr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmr
 i8a.pfb>
-Output written on proceedings.pdf (6 pages, 690301 bytes).
+Output written on proceedings.pdf (6 pages, 692762 bytes).
 PDF statistics:
- 263 PDF objects out of 1000 (max. 8388607)
- 214 compressed objects within 3 object streams
- 46 named destinations out of 1000 (max. 500000)
- 35046 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 291 PDF objects out of 1000 (max. 8388607)
+ 242 compressed objects within 3 object streams
+ 57 named destinations out of 1000 (max. 500000)
+ 34550 words of extra memory for PDF output out of 35830 (max. 10000000)
 
