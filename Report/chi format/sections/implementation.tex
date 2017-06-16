@@ -6,7 +6,7 @@ The LegoLens application is built using Unity, where custom scripts are written 
 For initial testing the Microsoft Hololens Emulator was used, while in later stages the application was deployed directly to the Hololens device. 
 
 \subsection{HoloToolkit}
-The HoloToolkit provide implementations of common tasks in developing applications for the Hololens. This kit implements functionality, which is mostly Hololens specific, such as spatial mapping and understanding. Also functionality for input methods are provided. The Hololens comes with two build-in gestures: the bloom and the tap.
+The HoloToolkit provides implementations of common tasks in developing applications for the Hololens. This kit implements functionality, which is mostly Hololens specific, such as spatial mapping and understanding. Also functionality for input methods are provided. The Hololens comes with two build-in gestures: the bloom and the tap.
 
 \subsubsection{Spatial mapping and understanding}
 These two functionalities are fundamental for the use of the Hololens, since they let the Hololens understand the shape of a room. Thereby virtual objects can be placed in the real world. The toolkit provides prefabricated functionality for spartial mapping and understanding, which simply can be added in Unity.  \\
@@ -22,9 +22,9 @@ The single tap is used to navigate in the menu on the generator. The HoloToolkit
 While the HoloToolkit implements the augmentation of objects, the custom Unity scripts implement LEGO functionality. These scripts control the behaviour of the LEGO bricks, the generator and templates. 
 
 \subsubsection{Generator}
-The generator script contains the main functionality of the implemented code. Menu interactions are implemented here and thus the necessary functions to instantiate and model bricks. The instantiation is done by loading the prefabricated LEGO brick object, and colouring it depending on user input. A brick is not affected by gravity until the user interacts with the brick. For simplicity the number of shapes a brick can have is limited. \\
+The generator script contains the main functionality of the implemented code. Menu interactions are implemented here and thus the necessary functions to instantiate and model bricks. The instantiation is done by loading the prefabricated LEGO brick object, and colouring it depending on user input. A brick is not affected by gravity until the user interacts with the brick. For the purpose of initial simplicity the number of shapes a brick can have is limited. \\
 Templates are implemented in a similar way as bricks, except that these can not be coloured. Also the sandbox feature is implemented in the generator script. It generates 20 bricks with random shape and colour. \\
-The menu on the generator works by activating and deactivating the appropriate menu items. 
+The menu itself on the generator works by activating and deactivating the appropriate menu items.
 
 \subsubsection{Bricks and Templates}
-The brick and template scripts work in a similar ways. They both make sure that the generated objects do not rotate and do snap to a grid. An one-by-one brick is 0.8cm long and wide and 0.96cm high (with knobs). Thus bricks are forced to lay in positions which are a multiples of 0.8.
+As described above, the brick and template scripts work in a similar way. They both make sure that the generated objects do not rotate and do snap to a grid. A one-by-one brick is 0.8cm long and wide and 0.96cm tall (with knobs). Thus bricks are forced to be placed in positions which are multiples of 0.8.
