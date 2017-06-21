@@ -1,29 +1,48 @@
-Base path: D:/Unity/Editor/Data
+Base path: C:/Program Files/Unity/Editor/Data
 Cmd: initializeCompiler
 Cmd: preprocess
-  insize=2702 outsize=3238 ok=1
+  insize=2779 outsize=3299 ok=1
 Cmd: preprocess
-  insize=2099 outsize=1578 ok=1
+  insize=2164 outsize=1627 ok=1
 Cmd: preprocess
-  insize=4298 outsize=547 ok=1
+  insize=4417 outsize=571 ok=1
 Cmd: preprocess
-  insize=2639 outsize=1286 ok=1
+  insize=2732 outsize=1336 ok=1
 Cmd: preprocess
-  insize=1877 outsize=948 ok=1
+  insize=1973 outsize=997 ok=1
 Cmd: preprocess
-  insize=2445 outsize=681 ok=1
+  insize=2570 outsize=715 ok=1
 Cmd: preprocess
-  insize=12295 outsize=5944 ok=1
+  insize=12649 outsize=6122 ok=1
 Cmd: preprocess
-  insize=771 outsize=226 ok=1
+  insize=825 outsize=244 ok=1
 Cmd: preprocess
-  insize=2140 outsize=1619 ok=1
+  insize=2205 outsize=1668 ok=1
 Cmd: preprocess
-  insize=2754 outsize=2893 ok=1
+  insize=2831 outsize=2954 ok=1
 Cmd: preprocess
-  insize=2465 outsize=3005 ok=1
+  insize=2535 outsize=3058 ok=1
 Cmd: preprocess
-  insize=4266 outsize=566 ok=1
+  insize=4384 outsize=589 ok=1
 Cmd: preprocess
-  insize=1285 outsize=499 ok=1
+  insize=1339 outsize=524 ok=1
 Cmd: preprocess
+  insize=2587 outsize=2713 ok=1
+Cmd: preprocess
+  insize=2583 outsize=1976 ok=1
+Cmd: preprocess
+  insize=2543 outsize=1936 ok=1
+Cmd: preprocess
+  insize=6813 outsize=3955 ok=1
+Cmd: preprocess
+  insize=2800 outsize=1391 ok=1
+Cmd: preprocess
+  insize=4540 outsize=722 ok=1
+Cmd: preprocess
+  insize=1365 outsize=550 ok=1
+Cmd: preprocess
+  insize=988 outsize=276 ok=1
+Cmd: preprocess
+  insize=5517 outsize=3960 ok=1
+Cmd: preprocess
+  insize=5758 outsize=837 ok=1
